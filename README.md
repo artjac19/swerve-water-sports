@@ -1,6 +1,6 @@
 # swerve-water-sports
 
-This template should help get you started developing with Vue 3 in Vite.
+Swerve water sports website
 
 ## Recommended IDE Setup
 
