@@ -33,27 +33,27 @@ onMounted(() => {
 
     <h2 style="margin-top: 10vh; margin-bottom: 2vh;" id="2">Schedule a Visit</h2>
     <p style="text-align: center;">
-      You can schedule a visit by text, phone, email, or right here on the line. <br>
-      Contact info is at the bottom of the page or the scheduling tool is just below.<br>
-      You can see more information on some of our packages, events and a calander below.<br>
-      You can pay here through paypal or in person with cash check or cc.<br>
-      If it's your first time out this season, make sure to sign the <a href='https://form.jotform.com/220764194303048' target="_blank">Swerve Watersports Waiver</a>.
+      You can schedule a visit by text, phone, email, or right here online. <br>
+      Contact info is at the bottom of the page, and the scheduling tool is below.<br>
+      You can see more information below on some of our packages, events, and calendar.<br>
+      You can pay here through paypal, or in person with cash, check, or venmo.<br>
+      If it's your first time out this season, make sure to sign the <a href='https://form.jotform.com/220764194303048' target="_blank">Swerve Watersports Waiver</a>!
     </p>
     <PayPalForm style="margin-bottom: 4vh;"/>
   <a href="https://app.acuityscheduling.com/schedule.php?owner=11402006" target="_blank" class="acuity-embed-button" style="margin-bottom: 3vh; font-family: 'Montserrat', serif; color: #fff; padding: 8px 12px; border: 0px; border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a><link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/11402006.css" id="acuity-button-styles" />
   <table>
    <tr><th><p>Type</p></th><th><p>Price</p></th><th><p>Description</p></th></tr>
-   <tr><td><p>Ski Lesson</p></td><td><p>$50</p></td><td><p>Learn how to get up or master a new trick with our expert coaches in a one on one 30 minute session guaranteed you walk away with some additional knowledge.</p></td></tr>
+   <tr><td><p>Ski Lesson</p></td><td><p>$50</p></td><td><p>Learn how to get up or master a new trick with our expert coaches in a one on one, 30 minute session, guaranteed you walk away with some additional knowledge.</p></td></tr>
    <tr><td><p>1 Day Lessons</p></td><td><p>$140</p></td><td><p>Three (3) coached sets in one day</p></td></tr>
-   <tr><td><p>Multi-Ride Pass (10)</p></td><td><p>$400</p></td><td><p>Ten ski rides that can be used at any time.</p></td></tr>
-   <tr><td><p>Reserve the Lake for an hour</p></td><td><p>$140/hr</p></td><td><p>You reserve an hour slot with a driver and coach. In general you can get 4 long sets in during the hour, more people equals shorter sets.</p></td></tr>
-   <tr><td><p>Reserve the Lake for a Day</p></td><td><p>$720</p></td><td><p>10:00am - 4:00pm with driver and coach provided. Lunch can be provided for $10/meal.</p></td></tr>
-   <tr><td><p>Collegiate Pass</p></td><td><p>$140/day</p></td><td><p>Includes three (3) coached sets. Lodging, food and discounts for large groups and teams.</p></td></tr>
+   <tr><td><p>Multi-Ride Pass (10)</p></td><td><p>$400</p></td><td><p>Ten (10) ski rides that can be used at any time.</p></td></tr>
+   <tr><td><p>Reserve the Lake for an hour</p></td><td><p>$140/hr</p></td><td><p>Reserve an hour slot with a driver and coach. In general, you can get 4 long sets in during the hour, more people equals shorter sets.</p></td></tr>
+   <tr><td><p>Reserve the Lake for a Day</p></td><td><p>$720</p></td><td><p>Reserve the lake from 10:00am - 4:00pm with driver and coach provided. Lunch can be provided for $10/meal.</p></td></tr>
+   <tr><td><p>Collegiate Pass</p></td><td><p>$140/day</p></td><td><p>Includes three (3) coached sets. Lodging, food, and discounts for large groups and teams provided.</p></td></tr>
    <tr><td><p>Event Practice</p></td><td><p>$15</p></td><td><p>Fridays before tournaments for event participants, practice is discounted!</p></td></tr>
-   <tr><td><p>Season Pass</p></td><td><p>$2,450</p></td><td><p>Unlimited Season Pass for one person. Free skiing for an entire season!</p></td></tr>
+   <tr><td><p>Season Pass</p></td><td><p>$2,450</p></td><td><p>Unlimited Season Pass for one person. Free skiing any time for an entire season!</p></td></tr>
   </table>
   <h2>Large Groups</h2>
-  <p style="text-align: center;">Do you have a large group and want to reserve the lake for a certain number of rides or hours?  We can make that happen from birthday parties to corporate events we can show your group a good time, build comradery, and teach a fun sport!  We have food and lodging available if needed and can provide fun activities off the water as well!  Call with any questions and we can tell you more about our packages. Reserving the lake for an hour is $140 and includes a 2 person crew to help with all your needs.  With this option you can try and fit as many people into the hour as possible or take just a few long sets.  We recommend no more than 5 skiers try to ski in an hour.If you have a big group of skiers, we can offer quantity discounts.</p>
+  <p style="text-align: center;">Do you have a large group and want to reserve the lake for a certain number of rides or hours?  We can make that happen! From birthday parties to corporate events we can show your group a good time, build comradery, and teach a fun sport.  We have food and lodging available and can provide fun activities off the water as well!  Call with any questions and we can tell you more about our packages. Reserving the lake for an hour is $140 and includes a 2 person crew to help with all your needs.  With this option you can try and fit as many people into the hour as possible or take just a few long sets. We recommend no more than 5 skiers try to ski in an hour. If you have a big group of skiers, we can offer quantity discounts.</p>
   <iframe src="https://calendar.google.com/calendar/embed?src=slalombum%40gmail.com&ctz=America%2FChicago" style="border: 0; margin-top: 3vh; margin-bottom: 5vh;" width="1000vw" height="600vh" align-self="center" frameborder="0" scrolling="no"></iframe>
   <h2 id="3">Our Team</h2>
   <p>&#8195; &#8195;Our riders are multi sport athletes that express themselves on boards that cater to their styles and preferences. Our staff of professional water ski and wake board coaches can teach a first time skier or an advanced athlete the newest techniques to gain another trick, buoy, or foot.</p>
@@ -122,7 +122,7 @@ onMounted(() => {
   <img class="photo" alt="Barbell slalom" style="width: 400px; height: 400px;" src="../assets/barbellSlalom2.png" />
   </div>
   <h2 id="4">Lake and Area</h2>
-  <p>&#8195; &#8195;Swerve Watersports Center is on Lake Grace in Hillsboro Tennessee. It is a custom built water ski lake dug in 2004 by Nicky Lowe. Surrounded on one side by woods, grass trail and marsh, the other by some nice houses, the sight is beautiful. The lake was designed specifically for 3-event water skiing with a shallow depth, slopes to eliminate rollers, and the perfect shape. Located in Hillsboro TN, it is close to civilization but far out enough to feel like the country. Only 2 minutes from I-24 which runs directly between Nashville and Chattanooga, there is never a shortage of entertainment or sightseeing within an hour's drive. With restaurants and big name stores less than 5 minutes away, anything you might need is also close at hand.
+  <p>&#8195; &#8195;Swerve Watersports Center is on Lake Grace in Hillsboro Tennessee. It is a custom built water ski lake, dug in 2004 by Nicky Lowe. Surrounded on one side by woods, grass trails, and marsh, and the other by  nice houses, the sight is beautiful. The lake was designed specifically for 3-event water skiing with a shallow depth, slopes to eliminate rollers, and the perfect shape. Located in Hillsboro TN, it is close to town but far out enough to feel like the country. Only 2 minutes from I-24 which runs directly between Nashville and Chattanooga, there is never a shortage of entertainment or sightseeing within an hour's drive. With restaurants and big name stores less than 5 minutes away, anything you might need is close at hand.
     At our site you should expect to find a relaxed and friendly environment with great skiers and coaches. Come ski with us!</p>
   <div class="photos">
     <div class="vert-container">
