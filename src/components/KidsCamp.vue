@@ -5,7 +5,7 @@ import PayPalForm from './PayPalForm.vue';
 
 <template>
 <div class="vert-container">
-<h2 id="0" style="margin-top: 17vh; margin-bottom: 0vh;">Kids Camp </h2>
+<h2 style="margin-top: 17vh; margin-bottom: 0vh;">Kids Camp </h2>
 <p style="margin-top: 2.5vh; margin-bottom: 7vh;">&#8195; &#8195;We strive to get kids interested in and enjoying watersports at all ages.  Our kids camp provides a great environment for kids to be themselves and enjoy boating and skiing with other kids their ages. We strive to provide a fun setting for learning and developing social skills while becoming well rounded humans on and off the lake! </p>
 <div class="photos">
   <img class="photo" alt="Swerve Watersports Center Kids Camp" width="420px" height="280px" src="../assets/ashleywithkid.jpg" /> <!--pic/index/26.jpg  pic/index/24.jpg pic/index/27.jpg-->
@@ -35,10 +35,9 @@ import PayPalForm from './PayPalForm.vue';
   <tr><td>6 PM</td><td>Dinner</td></tr>
 </table>
 </div>
-
-<div class="vert-container">
-    <h2 style="margin-bottom: 0vh;">Reserve Kids Camp</h2>
-    <PayPalForm
+<h2>Reserve Kids Camp</h2>
+<div class="photos" style="margin-top: 2vh;">  
+    <PayPalForm class="photo"
       buttonId="2PLA39WVMXTAN"
       label="Kids Camp"
       description="Kids Camp"
@@ -47,7 +46,7 @@ import PayPalForm from './PayPalForm.vue';
         { value: 'Overnight Camp per day', label: 'Overnight Camp per day $160.00 USD' }
       ]" 
     />
-    <PayPalForm />
+    <PayPalForm class="photo"/>
 </div>
 </div>
 </template>

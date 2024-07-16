@@ -1,24 +1,42 @@
 <script setup>
 import { ref } from 'vue'
+import { nextTick } from 'vue';
 import HomePage from './components/HomePage.vue'
 import KidsCamp from './components/KidsCamp.vue'
-import Contact from './components/ContactUs.vue';
+import Contact from './components/ContactUs.vue'
+import DiscGolf from './components/DiscGolf.vue'
+import ProShop from './components/ProShop.vue'
 
 
 let tab = ref('Home')
 let number = ref(1)
+
+const reload = () => {
+  window.location.reload()
+  number.value=1
+}
+
 const switchTabs = (id, num) => {
   tab.value = id;
   number.value = num;
-  const element = document.getElementById(number.value);
-  const offsetVH = 15;
-  const offsetPixels = window.innerHeight * (offsetVH / 100);
-  const elementPosition = element.getBoundingClientRect().top;
-  const offsetPosition = elementPosition + window.scrollY - offsetPixels;
 
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: 'smooth'
+  nextTick(() => {
+    if (number.value == 1) {
+      window.scrollTo({top: 0, behavior: 'instant'})
+    } else {
+    const element = document.getElementById(number.value);
+    if (element) {
+      const offsetVH = 15;
+      const offsetPixels = window.innerHeight * (offsetVH / 100);
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - offsetPixels;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  }
   });
 }
 
@@ -34,14 +52,16 @@ const checkTabs = (myId) => {
     <button class="logo" @click="reload"><img src="./assets/swerve-01.png" object-fit="cover" flood="#ff0000" width="70vh" height="70vh"/></button>
     <button class="tab-item" @click="switchTabs('Home', 1)">Home</button>
     <button class="tab-item" @click="switchTabs('Home', 2)">Schedule a Visit</button>
-    <button class="tab-item" @click="switchTabs('Home', 3)">Lake and Area</button>
-    <button class="tab-item" @click="switchTabs('Home', 4)">Our Team</button>
-    <button class="tab-item" style="border-left: .4vh solid rgb(72,255, 0); padding-left: 3.4vh;" @click="switchTabs('Proshop', 0)">Proshop</button>
-    <button class="tab-item" @click="switchTabs('Kids', 0)">Kids Camp</button>
-    <button class="tab-item" @click="switchTabs('Disc', 0)">Disc Golf</button>
+    <button class="tab-item" @click="switchTabs('Home', 3)">Our Team</button>
+    <button class="tab-item" @click="switchTabs('Home', 4)">Lake and Area</button>
+    <button class="tab-item" style="border-left: .4vh solid rgb(72,255, 0); padding-left: 3.4vh;" @click="switchTabs('Proshop', 1)">Proshop</button>
+    <button class="tab-item" @click="switchTabs('Kids', 1)">Kids Camp</button>
+    <button class="tab-item" @click="switchTabs('Disc', 1)">Disc Golf</button>
   </div>
-  <HomePage v-if="checkTabs('Home')"></HomePage>
-  <KidsCamp v-if="checkTabs('Kids')"></KidsCamp>
+  <HomePage v-if="checkTabs('Home')"/>
+  <KidsCamp v-if="checkTabs('Kids')"/>
+  <DiscGolf v-if="checkTabs('Disc')"/>
+  <ProShop v-if="checkTabs('Proshop')"/>
   <Contact/>
 </template>
 
@@ -69,6 +89,22 @@ p {
   flex: 1;
   margin-top: 0vh;
   letter-spacing: .016em;
+}
+
+
+a {
+  font-weight: 600;
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #53b1ff;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #c983ff;
 }
 
 .logo {
@@ -137,6 +173,14 @@ p {
   justify-content: center;
     width: 100%;
   }
+
+.container { 
+  flex-direction: row;
+  align-self: center;
+  display: flex;
+  margin-right: 0vh;
+  margin-left: 0vh;
+}
   
 .photos { 
   flex-direction: row;
@@ -255,7 +299,6 @@ table {
   border-collapse: collapse;
   padding: 0vh;
   margin-bottom: 2vh;
-  margin-left: 0vh;
 }
 
 th {
@@ -272,6 +315,7 @@ td, th {
   padding-right: 5vh;
   font-family: 'Montserrat', serif;
   color: white;
+  vertical-align: top;
 }
 
 </style>
