@@ -64,7 +64,9 @@ import PayPalForm from './PayPalForm.vue';
 </template>
 
 <style scoped>
+
 .vert-container {
-    margin-top: 0vh;
+  margin-top: 0;
 }
+
 </style>
