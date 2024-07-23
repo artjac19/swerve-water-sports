@@ -30,7 +30,7 @@
       {
         "title": "Polarized Sunglasses",
         "price": "$32",
-        "imgSrc": "./src/assets/dubery.jpg",
+        "imgSrc": "dubery.jpg",
         "imgAlt": "Polarized Sunglasses",
         "description": "Dubery Sunglasses Polarized for UVA and UVB protection",
         "payPalFormProps": {
@@ -42,7 +42,7 @@
       {
         "title": "HO Freeride Slalom Ski",
         "price": "$365",
-        "imgSrc": "./src/assets/freeride.jpg",
+        "imgSrc": "freeride.jpg",
         "imgAlt": "HO Freeride",
         "description": "New 67\" HO Freeride slalom blank w/ fin 175+ 2014",
         "payPalFormProps": {
@@ -54,7 +54,7 @@
       {
         "title": "Trick Rope",
         "price": "$55",
-        "imgSrc": "./src/assets/trickrope.jpg",
+        "imgSrc": "trickrope.jpg",
         "imgAlt": "Trick rope",
         "description": "Trick rope with adjustable loops and float",
         "payPalFormProps": {
@@ -66,7 +66,7 @@
       {
         "title": "Barefoot Rope",
         "price": "$85",
-        "imgSrc": "./src/assets/barefootrope.jpg",
+        "imgSrc": "barefootrope.jpg",
         "imgAlt": "Barefoot Rope",
         "description": "12 strand red kevlar barefoot rope Floats Non-strech 600lb test 75' 80' 85' 90'",
         "payPalFormProps": {
@@ -78,7 +78,7 @@
       {
         "title": "Kevlar Glove Liners",
         "price": "$18",
-        "imgSrc": "./src/assets/liner.jpg",
+        "imgSrc": "liner.jpg",
         "imgAlt": "Kevlar Glove Liners",
         "description": "Kevlar liners to prevent blisters. Wear these magic gloves inside your gloves to prevent blisters and sore hands from skiing",
         "payPalFormProps": {
@@ -90,7 +90,7 @@
       {
         "title": "Sun Hat",
         "price": "$35",
-        "imgSrc": "./src/assets/sunhat.jpg",
+        "imgSrc": "sunhat.jpg",
         "imgAlt": "Sun Hats",
         "description": "Straw sunhat. The best hat for blocking sun while on the boat",
         "payPalFormProps": {
@@ -102,7 +102,7 @@
       {
         "title": "Hooded T Shirt Cotton Sunshirt",
         "price": "$45",
-        "imgSrc": "./src/assets/hoodedTShirt.jpg",
+        "imgSrc": "hoodedTShirt.jpg",
         "imgAlt": "Hooded T Shirt Cotton Sunshirt",
         "description": "Hooded longsleeve cotton T-Shirt. Works great as a sunshirt, charcoal and black colors available",
         "payPalFormProps": {
@@ -114,7 +114,7 @@
       {
         "title": "Waters Wetsuits Jump Suit",
         "price": "$385",
-        "imgSrc": "./src/assets/watersJumpSuit.jpg",
+        "imgSrc": "watersJumpSuit.jpg",
         "imgAlt": "Waters Wetsuits Jump Suit",
         "description": "Jump Suit padded, flexible and looks great",
         "payPalFormProps": {
@@ -126,7 +126,7 @@
       {
         "title": "Dolphin Wetsuits Ski Vest",
         "price": "$129",
-        "imgSrc": "./src/assets/dolphinVest.jpg",
+        "imgSrc": "dolphinVest.jpg",
         "imgAlt": "Dolphin Wetsuits Ski Vest",
         "description": "Ski Vest. Great padding and float for a competition vest lasts longer than the competition",
         "payPalFormProps": {
@@ -138,7 +138,7 @@
       {
         "title": "Stealth Bomber Glove",
         "price": "$85",
-        "imgSrc": "./src/assets/stealthBomberGlove.jpg",
+        "imgSrc": "stealthBomberGlove.jpg",
         "imgAlt": "Stealth Bomber Glove",
         "description": "Great Tough Glove for slalom and Skiing",
         "payPalFormProps": {
@@ -150,7 +150,7 @@
       {
         "title": "Stealth Mingo Glove",
         "price": "$79",
-        "imgSrc": "./src/assets/stealthMingoGlove.jpg",
+        "imgSrc": "stealthMingoGlove.jpg",
         "imgAlt": "Stealth Mingo Glove",
         "description": "Looks great and grips better",
         "payPalFormProps": {
@@ -162,7 +162,7 @@
       {
         "title": "Stealth Lite Glove",
         "price": "$69",
-        "imgSrc": "./src/assets/stealthLiteGlove.jpg",
+        "imgSrc": "stealthLiteGlove.jpg",
         "imgAlt": "Stealth Lite Glove",
         "description": "Simple classic reliable slalom glove",
         "payPalFormProps": {
@@ -174,7 +174,7 @@
       {
         "title": "Stealth Kevlar Glove",
         "price": "$89",
-        "imgSrc": "./src/assets/stealthKevlarGlove.jpg",
+        "imgSrc": "stealthKevlarGlove.jpg",
         "imgAlt": "Stealth Kevlar Glove",
         "description": "The best grip, vise grip on the handle with this durable glove",
         "payPalFormProps": {
@@ -186,7 +186,7 @@
       {
         "title": "S Lines Slalom",
         "price": "$110",
-        "imgSrc": "./src/assets/sLinesSlalom.jpg",
+        "imgSrc": "sLinesSlalom.jpg",
         "imgAlt": "S Lines Slalom",
         "description": "Salom ropes with the brightest colors and the closest measurements don’t get anything but the best",
         "payPalFormProps": {
@@ -198,7 +198,7 @@
       {
         "title": "S Lines Jump Rope",
         "price": "$70",
-        "imgSrc": "./src/assets/sLinesJumpRope.jpg",
+        "imgSrc": "sLinesJumpRope.jpg",
         "imgAlt": "S Lines Jump Rope",
         "description": "Jump Rope",
         "payPalFormProps": {
@@ -210,7 +210,7 @@
       {
         "title": "Swerve Boardshorts",
         "price": "$45",
-        "imgSrc": "./src/assets/swerveBoardShorts.jpg",
+        "imgSrc": "swerveBoardShorts.jpg",
         "imgAlt": "Swerve Boardshorts",
         "description": "Boardshorts vairety of styles and colors in stock",
         "payPalFormProps": {
@@ -222,7 +222,7 @@
       {
         "title": "Swerve Hat",
         "price": "$25",
-        "imgSrc": "./src/assets/swerveHat.jpg",
+        "imgSrc": "swerveHat.jpg",
         "imgAlt": "Swerve Hat",
         "description": "Swerve Hat",
         "payPalFormProps": {
@@ -234,7 +234,7 @@
       {
         "title": "Swerve Watersports Hoodie",
         "price": "$45",
-        "imgSrc": "./src/assets/hoodie.jpg",
+        "imgSrc": "hoodie.jpg",
         "imgAlt": "Swerve Watersports Hoodie",
         "description": "Swerve Watersports Hoodie",
         "payPalFormProps": {
@@ -246,7 +246,7 @@
       {
         "title": "S Lines Handles",
         "price": "$135",
-        "imgSrc": "./src/assets/handle.jpg",
+        "imgSrc": "handle.jpg",
         "imgAlt": "S Lines Handles",
         "description": "Slalom and Jump Handles with protective plastic",
         "payPalFormProps": {
@@ -260,7 +260,7 @@
       {
         "title": "Dolphin Barefoot Suit",
         "price": "$350",
-        "imgSrc": "./src/assets/barefootsuit.jpg",
+        "imgSrc": "barefootsuit.jpg",
         "imgAlt": "Dolphin Barefoot Suit",
         "description": "Barefoot Jump suit padded and floatation",
         "payPalFormProps": {
