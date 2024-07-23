@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "sharp": "^0.33.4",
     "vue": "^3.4.21"
   },
   "devDependencies": {
