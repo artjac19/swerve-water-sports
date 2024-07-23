@@ -5,7 +5,7 @@ import imageminSvgo from 'imagemin-svgo';
 import imageminWebp from 'imagemin-webp';
 
 (async () => {
-  await imagemin(['src/assets/*.{jpg,png,svg}'], {
+  const files = await imagemin(['src/assets/*.{jpg,png,svg}'], {
     destination: 'dist/assets',
     plugins: [
       imageminMozjpeg({ quality: 75 }),
@@ -18,6 +18,10 @@ import imageminWebp from 'imagemin-webp';
       }),
       imageminWebp({ quality: 75 })
     ]
+  });
+  
+  files.forEach(file => {
+    console.log(`Optimized: ${file.sourcePath} -> ${file.destinationPath}`);
   });
 
   console.log('Images optimized');
