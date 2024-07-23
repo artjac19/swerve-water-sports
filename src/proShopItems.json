@@ -210,7 +210,7 @@
       {
         "title": "Swerve Boardshorts",
         "price": "$45",
-        "imgSrc": "./src/assets/swerveBoardShorts.jpg",
+        "imgSrc": "./assets/swerveBoardShorts.jpg",
         "imgAlt": "Swerve Boardshorts",
         "description": "Boardshorts vairety of styles and colors in stock",
         "payPalFormProps": {
