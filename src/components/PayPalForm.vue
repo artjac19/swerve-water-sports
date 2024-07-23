@@ -14,18 +14,32 @@ defineProps({
         type: String,
         default: "Waterskiing"
     },
+    type: {
+        type: String
+    },
+    type2: {
+        type: String
+    },
+    type3: {
+        type: String
+    },
     options: {
-    type: Array,
-    default: () => [
-      { value: 'Lesson', label: 'Lesson $50.00 USD' },
-      { value: 'Ten Pack', label: 'Ten Pack $400.00 USD' },
-      { value: '1 Day Lessons', label: '1 Day Lessons $140.00 USD' },
-      { value: 'Season Pass', label: 'Season Pass $2,450.00 USD' }
-    ]
-  },
-    payButtonLabel: {
-        type: String,
-        default: "Pay with PayPal"
+        type: Array,
+        default: () => [ 
+            null
+        ]
+    },
+    options2: {
+        type: Array,
+        default: () => [
+            null
+        ]
+    },
+    options3: {
+        type: Array,
+        default: () => [
+            null
+        ]
     }
 });
 </script>
@@ -36,15 +50,24 @@ defineProps({
         <form :action="action" method="post" target="paypal">
             <input type="hidden" name="cmd" value="_s-xclick">
             <input type="hidden" name="hosted_button_id" :value="buttonId">
-            <p style="margin: 0; padding-bottom: 1vh;">
-                <input type="hidden" name="on0" :value="label"> {{ label }}
-            </p>
-            <select name="os0">
+            <input type="hidden" name="on0" :value="type">
+            <input type="hidden" name="on1" :value="type2">
+            <input type="hidden" name="on2" :value="type3">
+            <p style="margin: 0; padding-bottom: 1vh; text-align: center;"> {{ label }} </p>
+            <select v-if="(options[0]) !== null"  name="os0">
                 <option v-for="(option, index) in options" :key="index" :value="option.value">{{ option.label }}
                 </option>
             </select>
+            <select v-if="(options2[0]) !== null" name="os1">
+                <option v-for="(option, index) in options2" :key="index" :value="option.value">{{ option.label }}
+                </option>
+            </select>
+            <select v-if="(options3[0]) !== null" name="os2">
+                <option v-for="(option, index) in options3" :key="index" :value="option.value">{{ option.label }}
+                </option>
+            </select>
             <input type="hidden" name="currency_code" value="USD">
-            <button type="submit" class="submit-button" style="margin-top: 1vh;">{{ payButtonLabel }}</button>
+            <button type="submit" class="submit-button" style="margin-top: 1vh;">Pay with PayPal</button>
         </form>
     </div>
 </template>
@@ -71,6 +94,11 @@ select {
     color: white;
     line-height: 2;
     padding: 1.3vh;
+    margin-bottom: 1vh;
+}
+
+select:hover {
+    cursor: pointer;
 }
 
 .submit-button {

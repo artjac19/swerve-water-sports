@@ -6,10 +6,10 @@ import PayPalForm from './PayPalForm.vue';
 
 <template>
     <div class="vert-container">
-    <h2 style="margin-top: 17vh;">Disc Golf</h2> 
+    <h2 style="margin-top: calc(100px + 3vh);">Disc Golf</h2> 
     <div class="photos">
-        <p style=" margin-left: 15vh; margin-top: 0;">&#8195; &#8195;Swerve Watersports also has a disc golf course right here in Manchester Tennessee. Play for $4 or free with the purchase of a disc or buy a membership and play all the time for just $105. Our Proshop has limited hours especially during winter, please call or text to let someone know you are coming. Membership gets you 10% off discs. Be sure to sign the waiver and venmo @michaelbullockswerve for payments. You can view an interactive course map here at <a target="_blank" href="https://udisc.com/courses/swerve-1PXs">UDisc</a></p>
-        <PayPalForm class="photo" style="margin-right: 15vh; margin-top: 5vh;"
+        <p style=" margin-left: 5vw; margin-top: 0;">&#8195; &#8195;Swerve Watersports also has a disc golf course right here in Manchester Tennessee. Play for $4 or free with the purchase of a disc or buy a membership and play all the time for just $105. Our Proshop has limited hours especially during winter, please call or text to let someone know you are coming. Membership gets you 10% off discs. Be sure to sign the waiver and venmo @michaelbullockswerve for payments. You can view an interactive course map here at <a target="_blank" href="https://udisc.com/courses/swerve-1PXs">UDisc</a></p>
+        <PayPalForm class="photo" style="margin-right: 5vw; margin-top: 5vh;"
         buttonId="M2SC3LU3SSBJA"
         label="Disc Golf"
         description="Disc Golf"

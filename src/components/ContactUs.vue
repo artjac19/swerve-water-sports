@@ -4,7 +4,7 @@
 <template>
   <div class="vert-container">
     <h2>Contact</h2>
-    <div class="photos" style="margin-bottom: 1.5vh;">
+    <div style="margin-bottom: 1.5vh;">
     <a href="https://www.youtube.com/@swervewatersports" target="_blank" style="position: relative; display: inline-block;">
         <img src="../assets/youtubelogo.png" width="30px" height="30px" style="margin-right:3vh;">
         <span class="link-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></span>

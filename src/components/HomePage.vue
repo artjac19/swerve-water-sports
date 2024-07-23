@@ -25,7 +25,7 @@ onMounted(() => {
       <img class="photo" src="../assets/swerveshirts.jpg" style="width: 60vh; height: 45vh;">
     </div>
     <div class="photos">
-      <iframe width="560" height="315" style="margin-right: 5vh; border-radius: 1vh;"
+      <iframe width="560" height="315" style="margin-right: 2vw; border-radius: 1vh;"
         src="https://www.youtube.com/embed/WbCv3Hfaquk" frameborder="0" allowfullscreen></iframe>
       <iframe width="560" height="315" style="border-radius: 1vh;" src="https://www.youtube.com/embed/4HUNnQ2dQes"
         frameborder="0" allowfullscreen></iframe>
@@ -39,8 +39,18 @@ onMounted(() => {
       You can pay here through paypal or in person with cash check or cc.<br>
       If it's your first time out this season, make sure to sign the <a href='https://form.jotform.com/220764194303048' target="_blank">Swerve Watersports Waiver</a>.
     </p>
-    <PayPalForm style="margin-bottom: 4vh;"/>
-  <a href="https://app.acuityscheduling.com/schedule.php?owner=11402006" target="_blank" class="acuity-embed-button" style="margin-bottom: 3vh; font-family: 'Montserrat', serif; color: #fff; padding: 8px 12px; border: 0px; border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a><link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/11402006.css" id="acuity-button-styles" />
+    <PayPalForm style="margin-bottom: 4vh; align-self: center;"
+      class="photo"
+      :options="[
+        { value: 'Lesson', label: 'Lesson $50.00 USD' },
+        { value: 'Ten Pack', label: 'Ten Pack $400.00 USD' },
+        { value: '1 Day Lessons', label: '1 Day Lessons $140.00 USD' },
+        { value: 'Collegiate Day Stay', label: 'Collegiate Day Stay $140.00 USD' },
+        { value: 'Event Practice 4 passes', label: 'Event Practice 4 passes $15.00 USD' },
+        { value: 'Season Pass', label: 'Season Pass $2,450.00 USD' }
+      ]" 
+    />
+  <a href="https://app.acuityscheduling.com/schedule.php?owner=11402006" target="_blank" class="acuity-embed-button" style="margin: 0 0 3vh 2vw; font-family: 'Montserrat', serif; color: #fff; padding: 8px 12px; border: 0px; border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a><link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/11402006.css" id="acuity-button-styles" />
   <table>
    <tr><th><p>Type</p></th><th><p>Price</p></th><th><p>Description</p></th></tr>
    <tr><td><p>Ski Lesson</p></td><td><p>$50</p></td><td><p>Learn how to get up or master a new trick with our expert coaches in a one on one 30 minute session guaranteed you walk away with some additional knowledge.</p></td></tr>
@@ -53,8 +63,8 @@ onMounted(() => {
    <tr><td><p>Season Pass</p></td><td><p>$2,450</p></td><td><p>Unlimited Season Pass for one person. Free skiing for an entire season!</p></td></tr>
   </table>
   <h2>Large Groups</h2>
-  <p style="text-align: center;">Do you have a large group and want to reserve the lake for a certain number of rides or hours?  We can make that happen from birthday parties to corporate events we can show your group a good time, build comradery, and teach a fun sport!  We have food and lodging available if needed and can provide fun activities off the water as well!  Call with any questions and we can tell you more about our packages. Reserving the lake for an hour is $140 and includes a 2 person crew to help with all your needs.  With this option you can try and fit as many people into the hour as possible or take just a few long sets.  We recommend no more than 5 skiers try to ski in an hour.If you have a big group of skiers, we can offer quantity discounts.</p>
-  <iframe src="https://calendar.google.com/calendar/embed?src=slalombum%40gmail.com&ctz=America%2FChicago" style="border: 0; margin-top: 3vh; margin-bottom: 5vh;" width="1000vw" height="600vh" align-self="center" frameborder="0" scrolling="no"></iframe>
+  <p style="text-align: center;">Do you have a large group and want to reserve the lake for a certain number of rides or hours?  We can make that happen from birthday parties to corporate events we can show your group a good time, build comradery, and teach a fun sport!  We have food and lodging available if needed and can provide fun activities off the water as well!  Call with any questions and we can tell you more about our packages. Reserving the lake for an hour is $140 and includes a 2 person crew to help with all your needs.  With this option you can try and fit as many people into the hour as possible or take just a few long sets.  We recommend no more than 5 skiers try to ski in an hour. If you have a big group of skiers, we can offer quantity discounts.</p>
+  <iframe src="https://calendar.google.com/calendar/embed?src=slalombum%40gmail.com&ctz=America%2FChicago" style="border: 0; margin-top: 3vh; margin-bottom: 5vh; width: 80vw; height: 80vh;" align-self="center" frameborder="0" scrolling="no"></iframe>
   <h2 id="3">Our Team</h2>
   <p>&#8195; &#8195;Our riders are multi sport athletes that express themselves on boards that cater to their styles and preferences. Our staff of professional water ski and wake board coaches can teach a first time skier or an advanced athlete the newest techniques to gain another trick, buoy, or foot.</p>
   <div class="photos" style="align-items: center;">
@@ -153,7 +163,7 @@ onMounted(() => {
   </div>
   
   <h2>Things to Do</h2>
-  <table style="margin-left: 5vh; margin-top: 5vh;">
+  <table style="margin-left: 3vw; margin-top: 5vh;">
   <tr>
 <td> 
   <p>
