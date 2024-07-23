@@ -210,7 +210,7 @@
       {
         "title": "Swerve Boardshorts",
         "price": "$45",
-        "imgSrc": "./assets/swerveBoardShorts.jpg",
+        "imgSrc": "./swerve-water-sports/src/assets/swerveBoardShorts.jpg",
         "imgAlt": "Swerve Boardshorts",
         "description": "Boardshorts vairety of styles and colors in stock",
         "payPalFormProps": {
@@ -222,7 +222,7 @@
       {
         "title": "Swerve Hat",
         "price": "$25",
-        "imgSrc": "./src/assets/swerveHat.jpg",
+        "imgSrc": "./swerve-water-sports/assets/swerveHat.jpg",
         "imgAlt": "Swerve Hat",
         "description": "Swerve Hat",
         "payPalFormProps": {
@@ -234,7 +234,7 @@
       {
         "title": "Swerve Watersports Hoodie",
         "price": "$45",
-        "imgSrc": "./src/assets/hoodie.jpg",
+        "imgSrc": "./assets/hoodie.jpg",
         "imgAlt": "Swerve Watersports Hoodie",
         "description": "Swerve Watersports Hoodie",
         "payPalFormProps": {
