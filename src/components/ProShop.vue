@@ -4,12 +4,21 @@ import ProShopItem from './ProShopItem.vue';
 import ItemDetails from './ItemDetails.vue';
 import proShopItems from '../proShopItems.json';
 
-const allItems = ref([])
-const outOfStock = ref([])
+const images = import.meta.glob('../assets/*.{png,jpg,jpeg,svg}', { eager: true });
+
+const allItems = ref([]);
+const outOfStock = ref([]);
+
 onMounted(() => {
-  allItems.value = proShopItems.allItems
-  outOfStock.value = proShopItems.outOfStock
-})
+  allItems.value = proShopItems.allItems.map(item => ({
+    ...item,
+    imgSrc: images[`../assets/${item.imgSrc}`]?.default || item.imgSrc // Use the imported image or fallback to the original path
+  }));
+  outOfStock.value = proShopItems.outOfStock.map(item => ({
+    ...item,
+    imgSrc: images[`../assets/${item.imgSrc}`]?.default || item.imgSrc
+  }));
+});
 
 const itemDetailsProps = ref({
   title: "",
