@@ -5,13 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run optimize-images && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "deploy": "npm run build && gh-pages -d dist",
     "optimize-images": "node optimize-images.mjs"
-
   },
   "dependencies": {
     "bootstrap": "^5.3.3",

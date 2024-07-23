@@ -49,7 +49,7 @@ const checkTabs = (myId) => {
 <template>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
   <div class="menu-container">
-    <button class="logo" @click="reload"><img src="./assets/swerve-01.png" object-fit="cover" flood="#ff0000" width="70vh" height="70vh"/></button>
+    <button class="logo" @click="reload"><img src="./assets/swerve-01.webp" object-fit="cover" flood="#ff0000" width="70vh" height="70vh"/></button>
     <button class="tab-item" @click="switchTabs('Home', 1)">Home</button>
     <button class="tab-item" @click="switchTabs('Home', 2)">Schedule a Visit</button>
     <button class="tab-item" @click="switchTabs('Home', 3)">Our Team</button>
@@ -199,7 +199,7 @@ a:visited {
   .menu-container {
     display: flex;
     flex-direction: column;
-     
+
   }
 }
 

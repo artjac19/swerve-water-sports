@@ -13,16 +13,16 @@ onMounted(() => {
 
 <template>
   <div class="vert-container" style="margin-top: 12.5vh;">
-    <img id="1" src="../assets/banner.jpg" style="width: 100%; margin-top: 0; padding-top: 0;">
+    <img id="1" src="../assets/banner.webp" style="width: 100%; margin-top: 0; padding-top: 0;">
     <p style="text-align: center !important; margin-top: 4vh;">Call or email now to let our pros teach you how to ski or wakeboard!<br>
       We offer a variety of economical packages perfect for individuals and large groups.<br>
       Our proshop sells a variety of waterski equipment be sure to check it out!<br>
       Hang out at the lake on a hot day!<br>
       Play a round of disc golf!<br><br></p>
     <div class="photos">
-      <img class="photo" src="../assets/david1ball.png" style="width: 60vh; height: 45vh;">
-      <img class="photo" src="../assets/collegevolleyball.jpg" style="width: 60vh; height: 45vh;">
-      <img class="photo" src="../assets/swerveshirts.jpg" style="width: 60vh; height: 45vh;">
+      <img class="photo" src="../assets/david1ball.webp" style="width: 60vh; height: 45vh;">
+      <img class="photo" src="../assets/collegevolleyball.webp" style="width: 60vh; height: 45vh;">
+      <img class="photo" src="../assets/swerveshirts.webp" style="width: 60vh; height: 45vh;">
     </div>
     <div class="photos">
       <iframe width="560" height="315" style="margin-right: 2vw; border-radius: 1vh;"
@@ -79,8 +79,8 @@ onMounted(() => {
       <li>2023 Nationals</li>
     </ul>
   </div>
-    <img class="photo" alt="Ashley slalom" width="450" height="300" src="../assets/ashley2.jpg" />
-    <img class="photo" alt="Ashley trick" style="width: 400px; height: 400px;" src="../assets/ashley1.jpg" />
+    <img class="photo" alt="Ashley slalom" width="450" height="300" src="../assets/ashley2.webp" />
+    <img class="photo" alt="Ashley trick" style="width: 400px; height: 400px;" src="../assets/ashley1.webp" />
   </div>
   <div class="photos" style="align-items: center;">
     <div class="vert-container">
@@ -95,8 +95,8 @@ onMounted(() => {
       <li>2023 Mens 2 National Slalom Champion 2nd in Overall</li>
     </ul>
   </div>
-    <img class="photo" alt="Mike jump" style="width: 400px; height: 400px;" src="../assets/mike.jpg" />
-    <img class="photo" alt="Mike slalom" width="450" height="300" src="../assets/mike1.jpg" />
+    <img class="photo" alt="Mike jump" style="width: 400px; height: 400px;" src="../assets/mike.webp" />
+    <img class="photo" alt="Mike slalom" width="450" height="300" src="../assets/mike1.webp" />
   </div>
   <div class="photos" style="align-items: center;">
     <div class="vert-container">
@@ -111,8 +111,8 @@ onMounted(() => {
       <li>2023 Collegiate Nationals</li>
     </ul>
   </div>
-  <img class="photo" alt="Finlay slalom" width="533.3" height="300" src="../assets/finlaySlalom.png" />
-  <img class="photo" alt="Finlay jump" style="width: 400px; height: 400px;" src="../assets/finlayJump.png" />
+  <img class="photo" alt="Finlay slalom" width="533.3" height="300" src="../assets/finlaySlalom.webp" />
+  <img class="photo" alt="Finlay jump" style="width: 400px; height: 400px;" src="../assets/finlayJump.webp" />
   </div>
   <div class="photos" style="align-items: center;">
     <div class="vert-container">
@@ -128,8 +128,8 @@ onMounted(() => {
       <li>MCWSA Rookie of the Year</li>
     </ul>
   </div>
-  <img class="photo" alt="Jake slalom" width="480" height="270" src="../assets/jakeSlalom.png" />
-  <img class="photo" alt="Barbell slalom" style="width: 400px; height: 400px;" src="../assets/barbellSlalom2.png" />
+  <img class="photo" alt="Jake slalom" width="480" height="270" src="../assets/jakeSlalom.webp" />
+  <img class="photo" alt="Barbell slalom" style="width: 400px; height: 400px;" src="../assets/barbellSlalom2.webp" />
   </div>
   <h2 id="4">Lake and Area</h2>
   <p>&#8195; &#8195;Swerve Watersports Center is on Lake Grace in Hillsboro Tennessee. It is a custom built water ski lake dug in 2004 by Nicky Lowe. Surrounded on one side by woods, grass trail and marsh, the other by some nice houses, the sight is beautiful. The lake was designed specifically for 3-event water skiing with a shallow depth, slopes to eliminate rollers, and the perfect shape. Located in Hillsboro TN, it is close to civilization but far out enough to feel like the country. Only 2 minutes from I-24 which runs directly between Nashville and Chattanooga, there is never a shortage of entertainment or sightseeing within an hour's drive. With restaurants and big name stores less than 5 minutes away, anything you might need is also close at hand.
@@ -152,14 +152,14 @@ onMounted(() => {
       </ul>
     </div>
     <div class="vert-container">
-      <img class="photo" alt="Swerve Watersports Center Boat View" style="margin-top: 5vh" width="480" height="300" src="../assets/jacuzzi.jpg" />
-      <img class="photo" alt="Swerve Watersports Center Hillsboro" width="480" height="300" src="../assets/sunset.jpg" />
+      <img class="photo" alt="Swerve Watersports Center Boat View" style="margin-top: 5vh" width="480" height="300" src="../assets/jacuzzi.webp" />
+      <img class="photo" alt="Swerve Watersports Center Hillsboro" width="480" height="300" src="../assets/sunset.webp" />
     </div>
   </div>
   <div class="photos">
-    <img class="photo" alt="SWC" width="420" height="280" src="../assets/lake.jpg" />
-    <img class="photo" alt="Swerve" width="420" height="280" src="../assets/lake3.jpg" />
-    <img class="photo" alt="Waterski Jucuzzi SWC" width="420" height="280" src="../assets/lake2.jpg" />
+    <img class="photo" alt="SWC" width="420" height="280" src="../assets/lake.webp" />
+    <img class="photo" alt="Swerve" width="420" height="280" src="../assets/lake3.webp" />
+    <img class="photo" alt="Waterski Jucuzzi SWC" width="420" height="280" src="../assets/lake2.webp" />
   </div>
   
   <h2>Things to Do</h2>

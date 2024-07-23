@@ -21,14 +21,14 @@ import PayPalForm from './PayPalForm.vue';
         />
     </div>
     <div class="photos" style="align-items:start;">
-        <img class="photo" src="../assets/discgolf.png" width="400" height="auto"/>
+        <img class="photo" src="../assets/discgolf.webp" width="400" height="auto"/>
         <div class="vert-container">
-            <img class="photo" src="../assets/discgolfback12.png" width="400" height="400"/>
-            <img class="photo" src="../assets/hole24.jpg" width="400" height="auto"/>
+            <img class="photo" src="../assets/discgolfback12.webp" width="400" height="400"/>
+            <img class="photo" src="../assets/hole24.webp" width="400" height="auto"/>
         </div>
         <div class="vert-container">
-            <img class="photo" src="../assets/hole17.jpg" width="400" height="auto"/>
-            <img class="photo" src="../assets/hole15.jpg" width="400" height="auto"/>
+            <img class="photo" src="../assets/hole17.webp" width="400" height="auto"/>
+            <img class="photo" src="../assets/hole15.webp" width="400" height="auto"/>
         </div>
     </div>
 </div>

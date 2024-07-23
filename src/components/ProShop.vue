@@ -4,7 +4,7 @@ import ProShopItem from './ProShopItem.vue';
 import ItemDetails from './ItemDetails.vue';
 import proShopItems from '../proShopItems.json';
 
-const images = import.meta.glob('../assets/*.{png,jpg,jpeg,svg}', { eager: true });
+const images = import.meta.glob('../assets/*.{png,jpg,jpeg,svg,webp}', { eager: true });
 
 const allItems = ref([]);
 const outOfStock = ref([]);
