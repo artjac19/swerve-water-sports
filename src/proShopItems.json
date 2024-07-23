@@ -3,7 +3,7 @@
       {
         "title": "Swerve T-Shirt",
         "price": "$25",
-        "imgSrc": "./src/assets/tyeDyeT.jpg",
+        "imgSrc": "tyeDyeT.jpg",
         "imgAlt": "Swerve T-Shirt",
         "description": "Swerve Watersports Classic T shirt",
         "payPalFormProps": {

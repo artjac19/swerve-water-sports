@@ -8,7 +8,6 @@ defineProps({
     buttonId: {
         type: String,
         default: "THWYXNZ5ZKD78",
-        required: true
     },
     label: {
         type: String,
