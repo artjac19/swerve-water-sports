@@ -10,6 +10,7 @@ import ProShop from './components/ProShop.vue'
 
 let tab = ref('Home')
 let number = ref(1)
+let isVisible = true;
 
 const reload = () => {
   window.location.reload()
@@ -19,6 +20,10 @@ const reload = () => {
 const switchTabs = (id, num) => {
   tab.value = id;
   number.value = num;
+
+  if (isVisible) {
+    toggleVisibility(false)
+  }
 
   nextTick(() => {
     if (number.value == 1) {
@@ -44,17 +49,38 @@ const checkTabs = (myId) => {
   return myId == tab.value;
 }
 
+const toggleVisibility = (makeVisible) => {
+  if (makeVisible) {
+    document.getElementById('tabs').className = "menu-mobile";
+    document.getElementById('proshop').className = "tab-item";
+    document.getElementById('logo').className = "logo-gone";
+    document.getElementById('x-button').className = "logo";
+    isVisible = true;
+  } else {
+    document.getElementById('tabs').className = "menu-container";
+    document.getElementById('proshop').className = "tab-item proshop";
+    document.getElementById('logo').className = "logo";
+    document.getElementById('x-button').className = "logo-gone";
+    isVisible = false;
+  }
+}
+
 </script>
 
 <template>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
-  <div class="menu-container">
-    <button class="logo" @click="reload"><img src="./assets/swerve-01.png" object-fit="cover" flood="#ff0000" width="70vh" height="70vh"/></button>
+  <div style="border-bottom: .4vh solid rgb(72, 255, 0); background-color: black; align-items: center; margin: 0; padding: 0; position: fixed; top: 0; left: 0; width: 100vw; z-index: 2;">
+    <button class="logo" style="display: flex; flex-direction: column; margin-left: auto; margin-right: auto; margin-top: 2vh; margin-bottom: 2vh;" @click="toggleVisibility(true)"><img id="hamburger" src="./assets/menu-01.webp" object-fit="cover" flood="#ff0000" width="50vh" height="50vh"/></button>
+  </div>
+
+  <div id="tabs" class="menu-container">
+    <button class="logo" id="logo" @click="reload"><img src="./assets/swerve-01.webp" object-fit="cover" flood="#ff0000" width="70vh" height="70vh"/></button>
+    <button class="logo-gone" id="x-button" @click="toggleVisibility(false)"><img src="./assets/x-button-01.webp" object-fit="cover" flood="#ff0000" style="width: 5vh; height: 5vh; align-self: center; margin: 1vh 0 0 0; padding: 0;"/></button>
     <button class="tab-item" @click="switchTabs('Home', 1)">Home</button>
     <button class="tab-item" @click="switchTabs('Home', 2)">Schedule a Visit</button>
     <button class="tab-item" @click="switchTabs('Home', 3)">Our Team</button>
     <button class="tab-item" @click="switchTabs('Home', 4)">Lake and Area</button>
-    <button class="tab-item" style="border-left: .4vh solid rgb(72,255, 0); padding-left: 3.4vh;" @click="switchTabs('Proshop', 1)">Proshop</button>
+    <button class="tab-item proshop" id="proshop" @click="switchTabs('Proshop', 1)">Pro Shop</button>
     <button class="tab-item" @click="switchTabs('Kids', 1)">Kids Camp</button>
     <button class="tab-item" @click="switchTabs('Disc', 1)">Disc Golf</button>
   </div>
@@ -83,14 +109,13 @@ p {
   text-align: left;
   font-weight: 0;
   box-sizing: border-box;
-  max-width: calc(100vw - 200px);
+  max-width: calc(100vw - 80px);
   line-height: 2;
   overflow-wrap: break-word;
   flex: 1;
   margin-top: 0vh;
   letter-spacing: .016em;
 }
-
 
 a {
   font-weight: 600;
@@ -114,6 +139,13 @@ a:visited {
   margin-top: 1vh;
   margin-left: 1vh;
 }
+.logo:hover {
+  cursor: pointer;
+}
+
+.logo-gone {
+  display: none;
+}
 
 .menu-container {
   position: fixed;
@@ -133,6 +165,22 @@ a:visited {
   cursor: pointer;
 }
 
+.menu-mobile {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0vh;
+  top: 0vh;
+  left: 0vh;
+  padding-bottom: 1vh;
+  align-items: center;
+  background-color:black;
+  border-bottom: .4vh solid rgb(72, 255, 0);
+  overflow: hidden;
+}
+
 .tab-item {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
@@ -141,8 +189,8 @@ a:visited {
   background-color: transparent;
   position: relative; 
   overflow: hidden;
-  margin-left: 2vh;
-  min-width:10vh;
+  margin-left: 1vw;
+  min-width: 6vw;
   padding: 8px 16px;
 }
 
@@ -163,12 +211,17 @@ a:visited {
   transform: translateX(-50%);
 }
 
+.proshop {
+  border-left: .4vh solid rgb(72,255, 0); 
+  padding-left: 3.4vh;
+}
+
 .vert-container {
   flex-direction: column;
   display: flex;
   margin-top: 0vh;
-  margin-left: 0vh;
-  margin-right: 0vh;
+  margin-left: 0;
+  margin-right: 0;
   align-items: center;
   justify-content: center;
     width: 100%;
@@ -186,8 +239,8 @@ a:visited {
   flex-direction: row;
   align-self: center;
   display: flex;
-  margin-right: 5vh;
-  margin-left: 5vh;
+  margin-right: 2vw;
+  margin-left: 2vw;
 }
 
 @media (max-aspect-ratio: 3/2) {
@@ -197,11 +250,13 @@ a:visited {
     display: flex;
     align-items: center;
   }
-  
+  .menu-container {
+    display: none;
+  }
 }
 
 .photo {
-  margin-left: 5vh;
+  margin-left: 2vw;
   border-radius: 1vh;
   margin-bottom: 5vh;
 }
@@ -218,8 +273,8 @@ a:visited {
   box-sizing: border-box;
   max-width: 125vh;
   overflow-wrap: break-word;
-  margin-left: 5vh;
-  margin-right: 5vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
   line-height: 2;
   flex: 1;
 }
@@ -235,8 +290,8 @@ ul {
 li {
   font-family: 'Montserrat', serif;
   line-height: 2;
-  margin-left: 10vh;
-  margin-right: 10vh;
+  margin-left: 6vw;
+  margin-right: 6vw;
   overflow-wrap: break-word;
   font-size: 1.2em;
   color: white;
@@ -316,6 +371,21 @@ td, th {
   font-family: 'Montserrat', serif;
   color: white;
   vertical-align: top;
+  min-width: 200px;
+}
+
+.button-hover {
+  cursor: pointer; 
+  border-radius: 10px;
+}
+
+.item:hover {
+  color: rgb(72, 255, 0);
+}
+
+.invisible-table {
+  background-color: transparent;
+  border-width: 0;
 }
 
 </style>

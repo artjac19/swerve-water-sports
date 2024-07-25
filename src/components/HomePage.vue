@@ -13,19 +13,19 @@ onMounted(() => {
 
 <template>
   <div class="vert-container" style="margin-top: 12.5vh;">
-    <img id="1" src="../assets/banner.jpg" style="width: 100%; margin-top: 0; padding-top: 0;">
+    <img id="1" src="../assets/banner.webp" style="width: 100%; margin-top: 0; padding-top: 0;">
     <p style="text-align: center !important; margin-top: 4vh;">Call or email now to let our pros teach you how to ski or wakeboard!<br>
       We offer a variety of economical packages perfect for individuals and large groups.<br>
       Our proshop sells a variety of waterski equipment be sure to check it out!<br>
       Hang out at the lake on a hot day!<br>
       Play a round of disc golf!<br><br></p>
     <div class="photos">
-      <img class="photo" src="../assets/david1ball.png" style="width: 60vh; height: 45vh;">
-      <img class="photo" src="../assets/collegevolleyball.jpg" style="width: 60vh; height: 45vh;">
-      <img class="photo" src="../assets/swerveshirts.jpg" style="width: 60vh; height: 45vh;">
+      <img class="photo" src="../assets/david1ball.webp" style="width: 60vh; height: 45vh;">
+      <img class="photo" src="../assets/collegevolleyball.webp" style="width: 60vh; height: 45vh;">
+      <img class="photo" src="../assets/swerveshirts.webp" style="width: 60vh; height: 45vh;">
     </div>
     <div class="photos">
-      <iframe width="560" height="315" style="margin-right: 5vh; border-radius: 1vh;"
+      <iframe width="560" height="315" style="margin-right: 2vw; border-radius: 1vh;"
         src="https://www.youtube.com/embed/WbCv3Hfaquk" frameborder="0" allowfullscreen></iframe>
       <iframe width="560" height="315" style="border-radius: 1vh;" src="https://www.youtube.com/embed/4HUNnQ2dQes"
         frameborder="0" allowfullscreen></iframe>
@@ -39,8 +39,18 @@ onMounted(() => {
       You can pay here through paypal, or in person with cash, check, or venmo.<br>
       If it's your first time out this season, make sure to sign the <a href='https://form.jotform.com/220764194303048' target="_blank">Swerve Watersports Waiver</a>!
     </p>
-    <PayPalForm style="margin-bottom: 4vh;"/>
-  <a href="https://app.acuityscheduling.com/schedule.php?owner=11402006" target="_blank" class="acuity-embed-button" style="margin-bottom: 3vh; font-family: 'Montserrat', serif; color: #fff; padding: 8px 12px; border: 0px; border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a><link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/11402006.css" id="acuity-button-styles" />
+    <PayPalForm style="margin-bottom: 4vh; align-self: center;"
+      class="photo"
+      :options="[
+        { value: 'Lesson', label: 'Lesson $50.00 USD' },
+        { value: 'Ten Pack', label: 'Ten Pack $400.00 USD' },
+        { value: '1 Day Lessons', label: '1 Day Lessons $140.00 USD' },
+        { value: 'Collegiate Day Stay', label: 'Collegiate Day Stay $140.00 USD' },
+        { value: 'Event Practice 4 passes', label: 'Event Practice 4 passes $15.00 USD' },
+        { value: 'Season Pass', label: 'Season Pass $2,450.00 USD' }
+      ]" 
+    />
+  <a href="https://app.acuityscheduling.com/schedule.php?owner=11402006" target="_blank" class="acuity-embed-button" style="margin: 0 0 3vh 2vw; font-family: 'Montserrat', serif; color: #fff; padding: 8px 12px; border: 0px; border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a><link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/11402006.css" id="acuity-button-styles" />
   <table>
    <tr><th><p>Type</p></th><th><p>Price</p></th><th><p>Description</p></th></tr>
    <tr><td><p>Ski Lesson</p></td><td><p>$50</p></td><td><p>Learn how to get up or master a new trick with our expert coaches in a one on one, 30 minute session, guaranteed you walk away with some additional knowledge.</p></td></tr>
@@ -54,7 +64,7 @@ onMounted(() => {
   </table>
   <h2>Large Groups</h2>
   <p style="text-align: center;">Do you have a large group and want to reserve the lake for a certain number of rides or hours?  We can make that happen! From birthday parties to corporate events we can show your group a good time, build comradery, and teach a fun sport.  We have food and lodging available and can provide fun activities off the water as well!  Call with any questions and we can tell you more about our packages. Reserving the lake for an hour is $140 and includes a 2 person crew to help with all your needs.  With this option you can try and fit as many people into the hour as possible or take just a few long sets. We recommend no more than 5 skiers try to ski in an hour. If you have a big group of skiers, we can offer quantity discounts.</p>
-  <iframe src="https://calendar.google.com/calendar/embed?src=slalombum%40gmail.com&ctz=America%2FChicago" style="border: 0; margin-top: 3vh; margin-bottom: 5vh;" width="1000vw" height="600vh" align-self="center" frameborder="0" scrolling="no"></iframe>
+  <iframe src="https://calendar.google.com/calendar/embed?src=slalombum%40gmail.com&ctz=America%2FChicago" style="border: 0; margin-top: 3vh; margin-bottom: 5vh;" width="80vw" height="80vh" align-self="center" frameborder="0" scrolling="no"></iframe>
   <h2 id="3">Our Team</h2>
   <p>&#8195; &#8195;Our riders are multi sport athletes that express themselves on boards that cater to their styles and preferences. Our staff of professional water ski and wake board coaches can teach a first time skier or an advanced athlete the newest techniques to gain another trick, buoy, or foot.</p>
   <div class="photos" style="align-items: center;">
@@ -69,8 +79,8 @@ onMounted(() => {
       <li>2023 Nationals</li>
     </ul>
   </div>
-    <img class="photo" alt="Ashley slalom" width="450" height="300" src="../assets/ashley2.jpg" />
-    <img class="photo" alt="Ashley trick" style="width: 400px; height: 400px;" src="../assets/ashley1.jpg" />
+    <img class="photo" alt="Ashley slalom" width="450" height="300" src="../assets/ashley2.webp" />
+    <img class="photo" alt="Ashley trick" style="width: 400px; height: 400px;" src="../assets/ashley1.webp" />
   </div>
   <div class="photos" style="align-items: center;">
     <div class="vert-container">
@@ -85,8 +95,8 @@ onMounted(() => {
       <li>2023 Mens 2 National Slalom Champion 2nd in Overall</li>
     </ul>
   </div>
-    <img class="photo" alt="Mike jump" style="width: 400px; height: 400px;" src="../assets/mike.jpg" />
-    <img class="photo" alt="Mike slalom" width="450" height="300" src="../assets/mike1.jpg" />
+    <img class="photo" alt="Mike jump" style="width: 400px; height: 400px;" src="../assets/mike.webp" />
+    <img class="photo" alt="Mike slalom" width="450" height="300" src="../assets/mike1.webp" />
   </div>
   <div class="photos" style="align-items: center;">
     <div class="vert-container">
@@ -101,8 +111,8 @@ onMounted(() => {
       <li>2023 Collegiate Nationals</li>
     </ul>
   </div>
-  <img class="photo" alt="Finlay slalom" width="533.3" height="300" src="../assets/finlaySlalom.png" />
-  <img class="photo" alt="Finlay jump" style="width: 400px; height: 400px;" src="../assets/finlayJump.png" />
+  <img class="photo" alt="Finlay slalom" width="533.3" height="300" src="../assets/finlaySlalom.webp" />
+  <img class="photo" alt="Finlay jump" style="width: 400px; height: 400px;" src="../assets/finlayJump.webp" />
   </div>
   <div class="photos" style="align-items: center;">
     <div class="vert-container">
@@ -118,8 +128,8 @@ onMounted(() => {
       <li>MCWSA Rookie of the Year</li>
     </ul>
   </div>
-  <img class="photo" alt="Jake slalom" width="480" height="270" src="../assets/jakeSlalom.png" />
-  <img class="photo" alt="Barbell slalom" style="width: 400px; height: 400px;" src="../assets/barbellSlalom2.png" />
+  <img class="photo" alt="Jake slalom" width="480" height="270" src="../assets/jakeSlalom.webp" />
+  <img class="photo" alt="Barbell slalom" style="width: 400px; height: 400px;" src="../assets/barbellSlalom2.webp" />
   </div>
   <h2 id="4">Lake and Area</h2>
   <p>&#8195; &#8195;Swerve Watersports Center is on Lake Grace in Hillsboro Tennessee. It is a custom built water ski lake, dug in 2004 by Nicky Lowe. Surrounded on one side by woods, grass trails, and marsh, and the other by  nice houses, the sight is beautiful. The lake was designed specifically for 3-event water skiing with a shallow depth, slopes to eliminate rollers, and the perfect shape. Located in Hillsboro TN, it is close to town but far out enough to feel like the country. Only 2 minutes from I-24 which runs directly between Nashville and Chattanooga, there is never a shortage of entertainment or sightseeing within an hour's drive. With restaurants and big name stores less than 5 minutes away, anything you might need is close at hand.
@@ -142,18 +152,18 @@ onMounted(() => {
       </ul>
     </div>
     <div class="vert-container">
-      <img class="photo" alt="Swerve Watersports Center Boat View" style="margin-top: 5vh" width="480" height="300" src="../assets/jacuzzi.jpg" />
-      <img class="photo" alt="Swerve Watersports Center Hillsboro" width="480" height="300" src="../assets/sunset.jpg" />
+      <img class="photo" alt="Swerve Watersports Center Boat View" style="margin-top: 5vh" width="480" height="300" src="../assets/jacuzzi.webp" />
+      <img class="photo" alt="Swerve Watersports Center Hillsboro" width="480" height="300" src="../assets/sunset.webp" />
     </div>
   </div>
   <div class="photos">
-    <img class="photo" alt="SWC" width="420" height="280" src="../assets/lake.jpg" />
-    <img class="photo" alt="Swerve" width="420" height="280" src="../assets/lake3.jpg" />
-    <img class="photo" alt="Waterski Jucuzzi SWC" width="420" height="280" src="../assets/lake2.jpg" />
+    <img class="photo" alt="SWC" width="420" height="280" src="../assets/lake.webp" />
+    <img class="photo" alt="Swerve" width="420" height="280" src="../assets/lake3.webp" />
+    <img class="photo" alt="Waterski Jucuzzi SWC" width="420" height="280" src="../assets/lake2.webp" />
   </div>
   
   <h2>Things to Do</h2>
-  <table style="margin-left: 5vh; margin-top: 5vh;">
+  <table style="margin-left: 3vw; margin-top: 5vh;">
   <tr>
 <td> 
   <p>

@@ -5,17 +5,19 @@ import PayPalForm from './PayPalForm.vue';
 
 <template>
 <div class="vert-container">
-<h2 style="margin-top: 17vh; margin-bottom: 0vh;">Kids Camp </h2>
+<h2 style="margin-top: calc(100px + 3vh); margin-bottom: 0vh;">Kids Camp </h2>
 <p style="margin-top: 2.5vh; margin-bottom: 7vh;">&#8195; &#8195;We strive to get kids interested in and enjoying watersports at all ages.  Our kids camp provides a great environment for kids to be themselves and enjoy boating and skiing with other kids their ages. We strive to provide a fun setting for learning and developing social skills while becoming well rounded humans on and off the lake! </p>
 <div class="photos">
-  <img class="photo" alt="Swerve Watersports Center Kids Camp" width="420px" height="280px" src="../assets/ashleywithkid.jpg" /> <!--pic/index/26.jpg  pic/index/24.jpg pic/index/27.jpg-->
-  <img class="photo" alt="Swerve Watersports Center Hillsboro Tennessee Kids Camp" width="420px" height="280px" src="../assets/twokids.jpg" />
-  <img class="photo" alt="SWC Kids Camp" width="420px" height="280px" src="../assets/kidbackwrap.jpg" />
+  <img class="photo" alt="Swerve Watersports Center Kids Camp" width="420px" height="280px" src="../assets/ashleywithkid.webp" /> <!--pic/index/26.webp  pic/index/24.webp pic/index/27.webp-->
+  <img class="photo" alt="Swerve Watersports Center Hillsboro Tennessee Kids Camp" width="420px" height="280px" src="../assets/twokids.webp" />
+  <img class="photo" alt="SWC Kids Camp" width="420px" height="280px" src="../assets/kidbackwrap.webp" />
 </div>  
-  <h2>2024 Dates</h2>
   <div class="photos">
-    <p class="dates" style="margin-right: 5vh; margin-left: 5vh;">&#8195; &#8195; Kids camp will be offered June 17th-21st, July 8th-12th, July 15th-19th, and July 22th-26th. Kids of all ages and skill levels are welcomed from never having been on the water to competitive athletes learning the next trick or skill. Kids will be able to learn the basics on how to get up on 2 skis, slalom skis, wakeboards, and kneeboards. If you already have a knowledgable athlete our coachs can help them develop advanced techniques or help them learn their next trick!  We will teach a variety of basic skills and boat knowledge to ensure kids learn safe practices and become more knowledgeable around lakes, boats, and water. Kids from 9-16 are welcome although the age range can be flexible.</p>
-    <img class="photo" alt="SWC Kids Camp" width="480" height="320" src="../assets/kidtwoski.jpg" style="margin-top: 0vh; margin-left: 0vh; margin-right: 7vh;" img/>
+    <div style="display: flex; flex-direction: column;">
+      <h2>2024 Dates</h2>
+      <p class="dates" style="margin-right: 3vw; margin-left: 3vw;">&#8195; &#8195; Kids camp will be offered June 17th-21st, July 8th-12th, July 15th-19th, and July 22th-26th. Kids of all ages and skill levels are welcomed from never having been on the water to competitive athletes learning the next trick or skill. Kids will be able to learn the basics on how to get up on 2 skis, slalom skis, wakeboards, and kneeboards. If you already have a knowledgable athlete our coachs can help them develop advanced techniques or help them learn their next trick!  We will teach a variety of basic skills and boat knowledge to ensure kids learn safe practices and become more knowledgeable around lakes, boats, and water. Kids from 9-16 are welcome although the age range can be flexible.</p>
+    </div>
+    <img class="photo" alt="SWC Kids Camp" width="420" height="280" src="../assets/kidtwoski.webp" style="margin-top: 10vh; margin-left: 0vh; margin-right: 4vw;" img/>
 </div>
 <h2>Pricing and Logistics</h2>
 <p>
@@ -46,13 +48,25 @@ import PayPalForm from './PayPalForm.vue';
         { value: 'Overnight Camp per day', label: 'Overnight Camp per day $160.00 USD' }
       ]" 
     />
-    <PayPalForm class="photo"/>
+    <PayPalForm
+      class="photo"
+      :options="[
+        { value: 'Lesson', label: 'Lesson $50.00 USD' },
+        { value: 'Ten Pack', label: 'Ten Pack $400.00 USD' },
+        { value: '1 Day Lessons', label: '1 Day Lessons $140.00 USD' },
+        { value: 'Collegiate Day Stay', label: 'Collegiate Day Stay $140.00 USD' },
+        { value: 'Event Practice 4 passes', label: 'Event Practice 4 passes $15.00 USD' },
+        { value: 'Season Pass', label: 'Season Pass $2,450.00 USD' }
+      ]" 
+    />
 </div>
 </div>
 </template>
 
 <style scoped>
+
 .vert-container {
-    margin-top: 0vh;
+  margin-top: 0;
 }
+
 </style>
