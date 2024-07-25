@@ -8,7 +8,7 @@ import imageminSvgo from 'imagemin-svgo';
 import imageminWebp from 'imagemin-webp';
 
 const inputDir = 'originalAssets';
-const tempDir = 'tempAssets';  // Temporary directory to hold rotated images
+const tempDir = 'tempAssets';
 const outputDir = 'src/assets';
 
 const rotateImages = async (inputDir, tempDir) => {

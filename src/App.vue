@@ -10,6 +10,7 @@ import ProShop from './components/ProShop.vue'
 
 let tab = ref('Home')
 let number = ref(1)
+let isVisible = true;
 
 const reload = () => {
   window.location.reload()
@@ -19,6 +20,10 @@ const reload = () => {
 const switchTabs = (id, num) => {
   tab.value = id;
   number.value = num;
+
+  if (isVisible) {
+    toggleVisibility(false)
+  }
 
   nextTick(() => {
     if (number.value == 1) {
@@ -44,17 +49,38 @@ const checkTabs = (myId) => {
   return myId == tab.value;
 }
 
+const toggleVisibility = (makeVisible) => {
+  if (makeVisible) {
+    document.getElementById('tabs').className = "menu-mobile";
+    document.getElementById('proshop').className = "tab-item";
+    document.getElementById('logo').className = "logo-gone";
+    document.getElementById('x-button').className = "logo";
+    isVisible = true;
+  } else {
+    document.getElementById('tabs').className = "menu-container";
+    document.getElementById('proshop').className = "tab-item proshop";
+    document.getElementById('logo').className = "logo";
+    document.getElementById('x-button').className = "logo-gone";
+    isVisible = false;
+  }
+}
+
 </script>
 
 <template>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
-  <div class="menu-container">
-    <button class="logo" @click="reload"><img src="./assets/swerve-01.webp" object-fit="cover" flood="#ff0000" width="70vh" height="70vh"/></button>
+  <div style="border-bottom: .4vh solid rgb(72, 255, 0); background-color: black; align-items: center; margin: 0; padding: 0; position: fixed; top: 0; left: 0; width: 100vw; z-index: 2;">
+    <button class="logo" style="display: flex; flex-direction: column; margin-left: auto; margin-right: auto; margin-top: 2vh; margin-bottom: 2vh;" @click="toggleVisibility(true)"><img id="hamburger" src="./assets/menu-01.webp" object-fit="cover" flood="#ff0000" width="50vh" height="50vh"/></button>
+  </div>
+
+  <div id="tabs" class="menu-container">
+    <button class="logo" id="logo" @click="reload"><img src="./assets/swerve-01.webp" object-fit="cover" flood="#ff0000" width="70vh" height="70vh"/></button>
+    <button class="logo-gone" id="x-button" @click="toggleVisibility(false)"><img src="./assets/x-button-01.webp" object-fit="cover" flood="#ff0000" style="width: 5vh; height: 5vh; align-self: center; margin: 1vh 0 0 0; padding: 0;"/></button>
     <button class="tab-item" @click="switchTabs('Home', 1)">Home</button>
     <button class="tab-item" @click="switchTabs('Home', 2)">Schedule a Visit</button>
     <button class="tab-item" @click="switchTabs('Home', 3)">Our Team</button>
     <button class="tab-item" @click="switchTabs('Home', 4)">Lake and Area</button>
-    <button class="tab-item" style="border-left: .4vh solid rgb(72,255, 0); padding-left: 3.4vh;" @click="switchTabs('Proshop', 1)">Proshop</button>
+    <button class="tab-item proshop" id="proshop" @click="switchTabs('Proshop', 1)">Pro Shop</button>
     <button class="tab-item" @click="switchTabs('Kids', 1)">Kids Camp</button>
     <button class="tab-item" @click="switchTabs('Disc', 1)">Disc Golf</button>
   </div>
@@ -113,6 +139,13 @@ a:visited {
   margin-top: 1vh;
   margin-left: 1vh;
 }
+.logo:hover {
+  cursor: pointer;
+}
+
+.logo-gone {
+  display: none;
+}
 
 .menu-container {
   position: fixed;
@@ -130,6 +163,22 @@ a:visited {
 }
 .menu-container button:hover {
   cursor: pointer;
+}
+
+.menu-mobile {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0vh;
+  top: 0vh;
+  left: 0vh;
+  padding-bottom: 1vh;
+  align-items: center;
+  background-color:black;
+  border-bottom: .4vh solid rgb(72, 255, 0);
+  overflow: hidden;
 }
 
 .tab-item {
@@ -160,6 +209,11 @@ a:visited {
 .tab-item:hover::after {
   width: 80%;
   transform: translateX(-50%);
+}
+
+.proshop {
+  border-left: .4vh solid rgb(72,255, 0); 
+  padding-left: 3.4vh;
 }
 
 .vert-container {
@@ -197,9 +251,7 @@ a:visited {
     align-items: center;
   }
   .menu-container {
-    display: flex;
-    flex-direction: column;
-
+    display: none;
   }
 }
 
@@ -319,6 +371,7 @@ td, th {
   font-family: 'Montserrat', serif;
   color: white;
   vertical-align: top;
+  min-width: 200px;
 }
 
 .button-hover {

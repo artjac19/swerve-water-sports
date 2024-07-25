@@ -106,6 +106,19 @@
         "imgAlt": "Hooded T Shirt Cotton Sunshirt",
         "description": "Hooded longsleeve cotton T-Shirt. Works great as a sunshirt, charcoal and black colors available",
         "payPalFormProps": {
+          "type": "Size",
+          "type2": "Color",
+          "options": [
+            { "value": "Small", "label": "Small $45.00 USD" },
+            { "value": "Medium", "label": "Medium $45.00 USD" },
+            { "value": "Large", "label": "Large $45.00 USD" },
+            { "value": "XL", "label": "XL $45.00 USD" },
+            { "value": "XS", "label": "XS $45.00 USD" }
+          ],
+          "options2": [
+            {"value": "Black", "label": "Black"},
+            {"value": "Charcoal", "label": "Charcoal"}
+          ],
           "class": "photo",
           "buttonId": "EFS95EQL4PQEY",
           "label": "Hooded T Shirt Cotton Sunshirt"
@@ -118,6 +131,14 @@
         "imgAlt": "Waters Wetsuits Jump Suit",
         "description": "Jump Suit padded, flexible and looks great",
         "payPalFormProps": {
+          "type": "Blue Sizes",
+          "options": [
+            { "value": "Small", "label": "Small $385.00 USD" },
+            { "value": "Medium", "label": "Medium $385.00 USD" },
+            { "value": "Large", "label": "Large $385.00 USD" },
+            { "value": "XL", "label": "XL $385.00 USD" },
+            { "value": "XS", "label": "XS $385.00 USD" }
+          ],
           "class": "photo",
           "buttonId": "LE8A43ZHDF66N",
           "label": "Waters Wetsuits Jump Suit"
@@ -130,6 +151,17 @@
         "imgAlt": "Dolphin Wetsuits Ski Vest",
         "description": "Ski Vest. Great padding and float for a competition vest lasts longer than the competition",
         "payPalFormProps": {
+          "type": "Size and Color",
+          "options": [
+            {"value": "S Green Front Zip", "label": "S Green Front Zip $129.00 USD"},
+            {"value": "M Pink Front Zip", "label": "M Pink Front Zip $129.00 USD"},
+            {"value": "Large Yellow Front Zip", "label": "Large Yellow Front Zip $129.00 USD"}, 
+            {"value": "XS Blue Front Zip", "label": "XS Blue Front Zip $129.00 USD"}, 
+            {"value": "Large Red and Blue Front Zip", "label": "Large Red and Blue Front Zip $129.00 USD"}, 
+            {"value": "XL green Back Zip", "label": "XL green Back Zip $129.00 USD"},
+            {"value": "Medium Red Back Zip", "label": "Medium Red Back Zip $129.00 USD"}, 
+            {"value": "Medium Orange Back Zip", "label": "Medium Orange Back Zip $129.00 USD"}
+          ],
           "class": "photo",
           "buttonId": "Q6HUM4ATRSNAC",
           "label": "Dolphin Wetsuits Ski Vest"
@@ -142,6 +174,16 @@
         "imgAlt": "Stealth Bomber Glove",
         "description": "Great Tough Glove for slalom and Skiing",
         "payPalFormProps": {
+          "type": "Size",
+          "options": [
+            { "value": "XXS", "label": "XXS" },
+            { "value": "XS", "label": "XS" },
+            { "value": "S", "label": "S" },
+            { "value": "M", "label": "M" },
+            { "value": "L", "label": "L" },
+            { "value": "XL", "label": "XL" },
+            { "value": "XXL", "label": "XXL" }
+          ],
           "class": "photo",
           "buttonId": "29KVQARGML7LS",
           "label": "Stealth Bomber Glove"
@@ -154,6 +196,16 @@
         "imgAlt": "Stealth Mingo Glove",
         "description": "Looks great and grips better",
         "payPalFormProps": {
+          "type": "Size",
+          "options": [
+            { "value": "XXS", "label": "XXS" },
+            { "value": "XS", "label": "XS" },
+            { "value": "S", "label": "S" },
+            { "value": "M", "label": "M" },
+            { "value": "L", "label": "L" },
+            { "value": "XL", "label": "XL" },
+            { "value": "XXL", "label": "XXL" }
+          ],
           "class": "photo",
           "buttonId": "LYJUMUJF5U524",
           "label": "Stealth Mingo Glove"
@@ -166,6 +218,16 @@
         "imgAlt": "Stealth Lite Glove",
         "description": "Simple classic reliable slalom glove",
         "payPalFormProps": {
+          "type": "Size",
+          "options": [
+            { "value": "XXS", "label": "XXS" },
+            { "value": "XS", "label": "XS" },
+            { "value": "S", "label": "S" },
+            { "value": "M", "label": "M" },
+            { "value": "L", "label": "L" },
+            { "value": "XL", "label": "XL" },
+            { "value": "XXL", "label": "XXL" }
+          ],
           "class": "photo",
           "buttonId": "8U9TZ6P3NQJBW",
           "label": "Stealth Lite Glove"
@@ -178,6 +240,16 @@
         "imgAlt": "Stealth Kevlar Glove",
         "description": "The best grip, vise grip on the handle with this durable glove",
         "payPalFormProps": {
+          "type": "Size",
+          "options": [
+            { "value": "XXS", "label": "XXS" },
+            { "value": "XS", "label": "XS" },
+            { "value": "S", "label": "S" },
+            { "value": "M", "label": "M" },
+            { "value": "L", "label": "L" },
+            { "value": "XL", "label": "XL" },
+            { "value": "XXL", "label": "XXL" }
+          ],
           "class": "photo",
           "buttonId": "BXES6PDM8W7LQ",
           "label": "Stealth Kevlar Glove"
@@ -214,6 +286,14 @@
         "imgAlt": "Swerve Boardshorts",
         "description": "Boardshorts vairety of styles and colors in stock",
         "payPalFormProps": {
+          "type": "Size",
+          "options": [
+            {"value": "28", "label": "28"},
+            {"value": "30", "label": "30"},
+            {"value": "32", "label": "32"},
+            {"value": "34", "label": "34"},
+            {"value": "36", "label": "36"}
+          ],
           "class": "photo",
           "buttonId": "SR6JWSKSTPXPG",
           "label": "Swerve Boardshorts"
@@ -238,6 +318,14 @@
         "imgAlt": "Swerve Watersports Hoodie",
         "description": "Swerve Watersports Hoodie",
         "payPalFormProps": {
+          "type": "Size",
+          "options": [
+            { "value": "Small", "label": "Small $45.00 USD" },
+            { "value": "Medium", "label": "Medium $45.00 USD" },
+            { "value": "Large", "label": "Large $45.00 USD" },
+            { "value": "XL", "label": "XL $45.00 USD" },
+            { "value": "XS", "label": "XS $45.00 USD" }
+          ],
           "class": "photo",
           "buttonId": "YTLG3THPYTYBE",
           "label": "Swerve Watersports Hoodie"
@@ -250,6 +338,12 @@
         "imgAlt": "S Lines Handles",
         "description": "Slalom and Jump Handles with protective plastic",
         "payPalFormProps": {
+          "type": "Size and Type",
+          "options": [
+            {"value": "11\" Jump Handle", "label": "11\" Jump Handle $135.00 USD" }, 
+            {"value": "12\" Slalom Handle", "label": "12\" Slalom Handle $135.00 USD"}, 
+            {"value": "13\" Slalom Handle", "label": "13\" Slalom Handle $135.00 USD"}
+          ],
           "class": "photo",
           "buttonId": "5K7TTDUUX678N",
           "label": "S Lines Handles"
