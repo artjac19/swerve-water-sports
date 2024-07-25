@@ -25,9 +25,9 @@ onMounted(() => {
       <img class="photo" src="../assets/swerveshirts.webp" style="width: 60vh; height: 45vh;">
     </div>
     <div class="photos">
-      <iframe width="560" height="315" style="margin-right: 2vw; border-radius: 1vh;"
+      <iframe class="youtube-1"
         src="https://www.youtube.com/embed/WbCv3Hfaquk" frameborder="0" allowfullscreen></iframe>
-      <iframe width="560" height="315" style="border-radius: 1vh;" src="https://www.youtube.com/embed/4HUNnQ2dQes"
+      <iframe class="youtube-2" src="https://www.youtube.com/embed/4HUNnQ2dQes"
         frameborder="0" allowfullscreen></iframe>
     </div>
 
@@ -61,6 +61,17 @@ onMounted(() => {
    <tr><td><p>Collegiate Pass</p></td><td><p>$140/day</p></td><td><p>Includes three (3) coached sets. Lodging, food and discounts for large groups and teams.</p></td></tr>
    <tr><td><p>Event Practice</p></td><td><p>$15</p></td><td><p>Fridays before tournaments for event participants, practice is discounted!</p></td></tr>
    <tr><td><p>Season Pass</p></td><td><p>$2,450</p></td><td><p>Unlimited Season Pass for one person. Free skiing for an entire season!</p></td></tr>
+  </table>
+  <table class="mobile-table">
+   <tr><td><p><b>Ski Lesson: </b>$50<br>Learn how to get up or master a new trick with our expert coaches in a one on one 30 minute session guaranteed you walk away with some additional knowledge.</p></td></tr>
+   <tr><td><p><b>1 Day Lessons: </b>$140<br>Three (3) coached sets in one day</p></td></tr>
+   <tr><td><p><b>Multi-Ride Pass: </b>$400<br>Ten ski rides that can be used at any time.</p></td></tr>
+   <tr><td><p><b>Reserve the Lake for an hour: </b>$140/hr<br>You reserve an hour slot with a driver and coach. In general you can get 4 long sets in during the hour, more people equals shorter sets.</p></td></tr>
+   <tr><td><p><b>Reserve the Lake for a Day: </b>$720<br>10:00am - 4:00pm with driver and coach provided. Lunch can be provided for $10/meal.</p></td></tr>
+   <tr><td><p><b>Collegiate Pass: </b>$140/day<br>Includes three (3) coached sets. Lodging, food and discounts for large groups and teams.</p></td></tr>
+   <tr><td><p><b>Event Practice: </b>$15<br>Fridays before tournaments for event participants, practice is discounted!</p></td></tr>
+   <tr><td><p><b>Season Pass: </b>$2,450<br>Unlimited Season Pass for one person. Free skiing for an entire season!</p></td></tr>
+
   </table>
   <h2>Large Groups</h2>
   <p style="text-align: center;">Do you have a large group and want to reserve the lake for a certain number of rides or hours?  We can make that happen from birthday parties to corporate events we can show your group a good time, build comradery, and teach a fun sport!  We have food and lodging available if needed and can provide fun activities off the water as well!  Call with any questions and we can tell you more about our packages. Reserving the lake for an hour is $140 and includes a 2 person crew to help with all your needs.  With this option you can try and fit as many people into the hour as possible or take just a few long sets.  We recommend no more than 5 skiers try to ski in an hour. If you have a big group of skiers, we can offer quantity discounts.</p>

@@ -55,12 +55,14 @@ const toggleVisibility = (makeVisible) => {
     document.getElementById('proshop').className = "tab-item";
     document.getElementById('logo').className = "logo-gone";
     document.getElementById('x-button').className = "logo";
+    document.getElementById('exit-tabs').className = "exit";
     isVisible = true;
   } else {
     document.getElementById('tabs').className = "menu-container";
     document.getElementById('proshop').className = "tab-item proshop";
     document.getElementById('logo').className = "logo";
     document.getElementById('x-button').className = "logo-gone";
+    document.getElementById('exit-tabs').className = "logo-gone";
     isVisible = false;
   }
 }
@@ -72,7 +74,6 @@ const toggleVisibility = (makeVisible) => {
   <div style="border-bottom: .4vh solid rgb(72, 255, 0); background-color: black; align-items: center; margin: 0; padding: 0; position: fixed; top: 0; left: 0; width: 100vw; z-index: 2;">
     <button class="logo" style="display: flex; flex-direction: column; margin-left: auto; margin-right: auto; margin-top: 2vh; margin-bottom: 2vh;" @click="toggleVisibility(true)"><img id="hamburger" src="./assets/menu-01.webp" object-fit="cover" flood="#ff0000" width="50vh" height="50vh"/></button>
   </div>
-
   <div id="tabs" class="menu-container">
     <button class="logo" id="logo" @click="reload"><img src="./assets/swerve-01.webp" object-fit="cover" flood="#ff0000" width="70vh" height="70vh"/></button>
     <button class="logo-gone" id="x-button" @click="toggleVisibility(false)"><img src="./assets/x-button-01.webp" object-fit="cover" flood="#ff0000" style="width: 5vh; height: 5vh; align-self: center; margin: 1vh 0 0 0; padding: 0;"/></button>
@@ -84,6 +85,7 @@ const toggleVisibility = (makeVisible) => {
     <button class="tab-item" @click="switchTabs('Kids', 1)">Kids Camp</button>
     <button class="tab-item" @click="switchTabs('Disc', 1)">Disc Golf</button>
   </div>
+  <button class="logo-gone" id="exit-tabs" @click="toggleVisibility(false)" style="margin: 0; padding: 0; width: 100%; position: fixed; height: 50vh; top: 57vh; left: 0; z-index: 2;"></button>
   <HomePage v-if="checkTabs('Home')"/>
   <KidsCamp v-if="checkTabs('Kids')"/>
   <DiscGolf v-if="checkTabs('Disc')"/>
@@ -141,6 +143,11 @@ a:visited {
 }
 .logo:hover {
   cursor: pointer;
+}
+
+.exit {
+  border: none;
+  background-color: transparent;
 }
 
 .logo-gone {
@@ -243,18 +250,6 @@ a:visited {
   margin-left: 2vw;
 }
 
-@media (max-aspect-ratio: 3/2) {
-  .photos {
-    flex-direction: column;
-    align-self: center;
-    display: flex;
-    align-items: center;
-  }
-  .menu-container {
-    display: none;
-  }
-}
-
 .photo {
   margin-left: 2vw;
   border-radius: 1vh;
@@ -277,6 +272,20 @@ a:visited {
   margin-right: 2vw;
   line-height: 2;
   flex: 1;
+}
+
+.youtube-1 {
+  margin-right: 2vw;
+  border-radius: 1vh;
+  width: 35vw;
+  height: 19vw;
+}
+
+.youtube-2 {
+  border-radius: 1vh;
+  width: 35vw;
+  height: 19vw;
+  margin-right: 2vw;
 }
 
 .title {
@@ -386,6 +395,39 @@ td, th {
 .invisible-table {
   background-color: transparent;
   border-width: 0;
+}
+
+.mobile-table {
+  display: none;
+}
+
+@media (max-aspect-ratio: 3/2) {
+  .photos {
+    flex-direction: column;
+    align-self: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .youtube-1, .youtube-2 {
+    border-radius: 1vh;
+    width: 380px;
+    height: 210px;
+    margin-right: 0;
+    margin-top: 3vh;
+  }
+
+  table {
+    display: none;
+  }
+
+  .mobile-table {
+    display: flex;
+  }
 }
 
 </style>
