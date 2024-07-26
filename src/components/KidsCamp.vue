@@ -36,6 +36,17 @@ import PayPalForm from './PayPalForm.vue';
   <tr><td>4 PM</td><td>Checkout and after skiing activities</td></tr>
   <tr><td>6 PM</td><td>Dinner</td></tr>
 </table>
+<table class="mobile-table">
+  <tr><td><b>8:30 AM  </b>Breakfast</td></tr>
+  <tr><td><b>9:30 AM  </b>Morning warmups</td></tr>
+  <tr><td><b>10:00 AM  </b>First ski sets</td></tr>
+  <tr><td><b>11:30 AM  </b>Lunch</td></tr>
+  <tr><td><b>12:00 PM  </b>Second ski sets</td></tr>
+  <tr><td><b>2:00 PM  </b>Afternoon game</td></tr>
+  <tr><td><b>2:30 PM  </b>Third ski sets</td></tr>
+  <tr><td><b>4:00 PM  </b>Checkout and after skiing activities</td></tr>
+  <tr><td><b>6:00 PM  </b>Dinner</td></tr>
+</table>
 </div>
 <h2>Reserve Kids Camp</h2>
 <div class="photos" style="margin-top: 2vh;">  

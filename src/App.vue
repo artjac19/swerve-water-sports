@@ -383,6 +383,19 @@ td, th {
   min-width: 200px;
 }
 
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.info-item {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+}
+
 .button-hover {
   cursor: pointer; 
   border-radius: 10px;
@@ -398,6 +411,10 @@ td, th {
 }
 
 .mobile-table {
+  display: none;
+}
+
+.big-table {
   display: none;
 }
 
@@ -427,6 +444,17 @@ td, th {
 
   .mobile-table {
     display: flex;
+  }
+
+  .big-table {
+    display: flex;
+    background-color: #333;
+    max-width: 90%;
+    border-radius: 2vh;
+    align-self: center;
+    border-collapse: collapse;
+    padding: 0vh;
+    margin-bottom: 2vh;
   }
 }
 

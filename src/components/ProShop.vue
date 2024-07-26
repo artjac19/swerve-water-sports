@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import ProShopItem from './ProShopItem.vue';
 import ItemDetails from './ItemDetails.vue';
 import proShopItems from '../proShopItems.json';
@@ -30,25 +30,19 @@ const itemDetailsProps = ref({
 });
 
 const selectedItemIndex = ref(-1);
-const temporaryIndex = ref(-1);
+const showItemDetails = ref(false);
 
 function handleItemSelected(index) {
   itemDetailsProps.value = allItems.value[index];
-
   selectedItemIndex.value = index;
-  let tempIndex = selectedItemIndex.value
-  let tempLocation = document.querySelector(`#item-${tempIndex}`).getBoundingClientRect().left
-  let nextLocation = document.querySelector(`#item-${tempIndex + 1}`).getBoundingClientRect().left
-  // temp index = selectedItemIndex + how many index to next wrap, 
-  while (nextLocation !== null && tempLocation < nextLocation) { 
-    tempIndex++; 
-    tempLocation = document.querySelector(`#item-${tempIndex}`).getBoundingClientRect().left
-    nextLocation = document.querySelector(`#item-${tempIndex + 1}`) == null ? null : document.querySelector(`#item-${tempIndex + 1}`).getBoundingClientRect().left
-    if (tempIndex == 1000) { 
-      console.log('broke')
-      break; }
-  }
-   temporaryIndex.value = tempIndex
+  showItemDetails.value = true;
+
+  nextTick(() => {
+    const element = document.getElementById(`item-${index}`);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
 }
 
 </script>
@@ -58,9 +52,9 @@ function handleItemSelected(index) {
     <h2 style="margin-top: calc(100px + 3vh);">The Proshop </h2>
     <p style="text-align: center">We carry a variety of boardsport and watersport products and everything you will need with them. Give us a call we
     can help you find equipment and or give advice.</p>
-    <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; width: 90vw; margin: 0 5vw 0 5vw;">
+    <div class="proshop-container">
       <template v-for="(item, index) in allItems" :key="index">
-        <div :id="'item-' + index" style="margin-bottom: 2vh; width: 20vw;">
+        <div :id="'item-' + index" class="proshop-item">
           <ProShopItem
             :title="item.title"
             :price="item.price"
@@ -71,10 +65,31 @@ function handleItemSelected(index) {
             :isSelected="selectedItemIndex === index"
             @item-selected="handleItemSelected(index)"
           />
-          
         </div>
-        <ItemDetails  v-if="temporaryIndex === index" style="margin: 3vh 0 5vh 0; width: 90vw;" v-bind="itemDetailsProps" />
       </template>
     </div>
+    <ItemDetails v-if="showItemDetails" class="item-details" v-bind="itemDetailsProps" />
 </div>
 </template>
+
+<style scoped>
+.proshop-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 90vw; 
+  margin: 0 20px 0 20px;
+  justify-content: center; /* Center the grid items horizontally */
+}
+
+.proshop-item {
+  display: flex;
+  justify-content: center;
+}
+
+.item-details {
+  width: 90vw;
+  margin: 3vh 0 5vh 0;
+}
+</style>

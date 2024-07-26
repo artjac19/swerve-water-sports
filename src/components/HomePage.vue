@@ -71,8 +71,8 @@ onMounted(() => {
    <tr><td><p><b>Collegiate Pass: </b>$140/day<br>Includes three (3) coached sets. Lodging, food and discounts for large groups and teams.</p></td></tr>
    <tr><td><p><b>Event Practice: </b>$15<br>Fridays before tournaments for event participants, practice is discounted!</p></td></tr>
    <tr><td><p><b>Season Pass: </b>$2,450<br>Unlimited Season Pass for one person. Free skiing for an entire season!</p></td></tr>
-
   </table>
+
   <h2>Large Groups</h2>
   <p style="text-align: center;">Do you have a large group and want to reserve the lake for a certain number of rides or hours?  We can make that happen from birthday parties to corporate events we can show your group a good time, build comradery, and teach a fun sport!  We have food and lodging available if needed and can provide fun activities off the water as well!  Call with any questions and we can tell you more about our packages. Reserving the lake for an hour is $140 and includes a 2 person crew to help with all your needs.  With this option you can try and fit as many people into the hour as possible or take just a few long sets.  We recommend no more than 5 skiers try to ski in an hour. If you have a big group of skiers, we can offer quantity discounts.</p>
   <iframe src="https://calendar.google.com/calendar/embed?src=slalombum%40gmail.com&ctz=America%2FChicago" style="border: 0; margin-top: 3vh; margin-bottom: 5vh; width: 80vw; height: 80vh;" align-self="center" frameborder="0" scrolling="no"></iframe>
@@ -174,130 +174,114 @@ onMounted(() => {
   </div>
   
   <h2>Things to Do</h2>
-  <table style="margin-left: 3vw; margin-top: 5vh;">
-  <tr>
-<td> 
-  <p>
-  <b>In Manchester</b><br>
-   
-<a target="_blank" href="http://www.jackdaniels.com/">Jack Daniels Distillery</a><br>
-<a target="_blank" href="http://tnstateparks.com/parks/about/rock-island">Rock Island State Park</a><br>
-<a target="_blank" href="http://www.bonnaroo.com/">Bonaroo Music Festival</a><br>
-<a target="_blank" href="http://www.cumberlandcaverns.com/">Cumberland Caverns</a><br>
-<a target="_blank" href="http://www.beanscreekwinery.com/">Beans Creek Winery</a><br>
-<a target="_blank" href="https://skyaboveus.com/water-sports/10-Great-Kayaking-Launch-Areas-in-Middle-Tennessee">Middle TN river floats</a><br>
-</p>
-</td>
-<td>
-  <p>
-<b>Golf Courses</b><br> 
-<a target="_blank" href="https://www.golfwillowbrook.net/">Willowbrook golf course</a><br>
-The nicest course in the area<br>
+<div class="info-container">
+  <div class="info-item">
+    <p>
+      <b>In Manchester</b><br>
+      <a target="_blank" href="http://www.jackdaniels.com/">Jack Daniels Distillery</a><br>
+      <a target="_blank" href="http://tnstateparks.com/parks/about/rock-island">Rock Island State Park</a><br>
+      <a target="_blank" href="http://www.bonnaroo.com/">Bonaroo Music Festival</a><br>
+      <a target="_blank" href="http://www.cumberlandcaverns.com/">Cumberland Caverns</a><br>
+      <a target="_blank" href="http://www.beanscreekwinery.com/">Beans Creek Winery</a><br>
+      <a target="_blank" href="https://skyaboveus.com/water-sports/10-Great-Kayaking-Launch-Areas-in-Middle-Tennessee">Middle TN river floats</a><br>
+    </p>
+  </div>
+  <div class="info-item">
+    <p>
+      <b>Golf Courses</b><br> 
+      <a target="_blank" href="https://www.golfwillowbrook.net/">Willowbrook golf course</a><br>
+      The nicest course in the area<br>
+      <a target="_blank" href="http://scenicview.x10.mx/">Scenic View golf course</a><br>
+      A cheaper more laid back course closer to swerve<br>
+    </p>
+  </div>
+  <div class="info-item">
+    <p>
+      <b>Manchester Rec Center</b><br>
+      557 N Woodland St, Manchester, TN 37355<br>
+      Has a pool, racquetball, indoor track, basketball, weights and exercise equipment, exercise classes.
+    </p>
+  </div>
+  <div class="info-item">
+    <p>
+      <b>Climbing</b><br>
+      <a target="_blank" href="https://www.mountainproject.com/area/105883248/foster-falls">Foster Falls</a>- also the location of an awesome waterfall listed below<br>
+      <a target="_blank" href="https://www.mountainproject.com/area/112533882/denny-cove">Denny Cove</a><br>
+      <a target="_blank" href="https://www.mountainproject.com/area/108613875/castle-rock">Castle Rock</a><br>
+      <a target="_blank" href="https://www.mountainproject.com/area/106031921/stone-fort-aka-little-rock-city">Stone Fort/ Little Rock City</a><br>
+      <a target="_blank" href="https://www.mountainproject.com/area/105851828/the-tennessee-wall">The Tennessee Wall</a>
+    </p>
+  </div>
+  <div class="info-item">
+    <p>
+      <b>Local Waterfalls</b><br>
+      Foster Falls<br>
+      498 Foster Falls Rd, Sequatchie, TN 37374<br>
+      40 minutes away, Excellent climbing, hiking and a great waterfall and pool with a climbing route under the falls!<br>
+      Fall Creek Falls<br>
+      2009 Village Camp Road Spencer, TN 38585<br>
+      The tallest falls in Tennessee at 256 feet, about an hour away, there are multiple falls and pools.<br>
+      <a target="_blank" href="http://www.scenicusa.net/092512.html">Greeter Falls</a><br>
+      Greeter Trail Altamont, TN<br>
+      <a target="_blank" href="http://www.rubyfalls.com/">Ruby Falls</a><br>
+    </p>
+  </div>
+  <div class="info-item">
+    <p>
+      <b>Hiking</b><br>
+      Foster Falls Fiery Gizzary trail 12.5mi<br>
+      Follow the Fiery Gizzard trail from Foster Falls, 498 Foster Falls rd to 131 Fiery Gizzard Rd, Tracy City, TN 37387.<br>
+      Walk above foster falls along an incredible ridgeline and across lots of bridges.<br>
+      <a target="_blank" href="https://www.alltrails.com/trail/us/tennessee/buggytop-trail-to-lost-cove-cave">Buggy Top Trail to Lost Cove Cave 3.7mi</a><br>
+      Trail takes you through 3.7 miles of great woods to a Cave and creek<br>
+      A little tricky to follow the path at times, bring flashlights for the cave!<br>
+    </p>
+  </div>
+  <div class="info-item">
+    <p>
+      <b>In Nashville</b> <br>
+      <a target="_blank" href="http://www.visitmusiccity.com/">City of Nashville</a><br>
+      Edleys BBQ <br>
+      Praters BBQ in Manchester<br>
+      12th st, lots of small shops and food<br>
+      Broadway, live music and drinks <br>
+      Nashville Predators, best hockey in the south, on broadway downtown nashville. <br>
+      Tennessee Titans <br>
+      Nashville Zoo <br>
+      Top Golf <br>
+    </p>
+  </div>
+  <div class="info-item">
+    <p>
+      <b>Fred Deadman Park</b><br>
+      166 Wilson St, Manchester, TN 37355<br>
+      Tennis Courts, paved walking path, Baseball fields, Skatepark, in downtown Manchester right next to the rec center.<br>
+    </p>
+  </div>
+  <div class="info-item">
+    <p>
+      <b>Tubing the River</b><br>
+      Put-in:<br>
+      A three hour or so tube down the river.  Depending on rain it takes longer or shorter and you need to walk some parts if there isn't much flow.<br>
+      <a target="_blank" href="http://www.floattn.com/floatin_trips.pdf">Other Float Options on the 3 Forks</a>
+    </p>
+  </div>
+  <div class="info-item">
+    <p>
+      <b>Longboard Hills (Not recommending you try to do this!)</b><br>
+      Hwy 56 Beersheba springs TN<br>
+      Clouse Hill rd. and Payne Cove rd. Pelham TN<br>
+    </p>
+  </div>
+  <div class="info-item">
+    <p>
+      <b>In Chattanooga</b><br>
+      <a target="_blank" href="http://www.chattanoogafun.com/">City of Chattanooga</a><br>
+      <a target="_blank" href="http://www.tnaqua.org/Home.aspx">TN Aquarium</a><br>
+    </p>
+  </div>
+</div>
 
-<a target="_blank" href="http://scenicview.x10.mx/">Scenic View golf course</a><br>
-A cheaper more laid back course closer to swerve<br>
-</p>
-</td>
-<td>
-  <p>
-<b>Manchester Rec Center</b><br>
-557 N Woodland St, Manchester, TN 37355<br>
-Has a pool, racquetball, indoor track, basketball, weights and exercise equipment, exercise classes.
-</p>
-</td>
-</tr>
-<tr>
-<td>
-  <p>
-<b>Climbing</b><br>
-<a target="_blank" href="https://www.mountainproject.com/area/105883248/foster-falls">Foster Falls</a>- also the location of an awesome waterfall listed below<br>
-<a target="_blank" href="https://www.mountainproject.com/area/112533882/denny-cove">Denny Cove</a><br>
-<a target="_blank" href="https://www.mountainproject.com/area/108613875/castle-rock">Castle Rock</a><br>
-<a target="_blank" href="https://www.mountainproject.com/area/106031921/stone-fort-aka-little-rock-city">Stone Fort/ Little Rock City</a><br>
-<a target="_blank" href="https://www.mountainproject.com/area/105851828/the-tennessee-wall">The Tennessee Wall</a>
-</p>
-</td>
-<td>
-  <p>
-<b>Fred Deadman Park</b><br>
-166 Wilson St, Manchester, TN 37355<br>
-Tennis Courts, paved walking path, Baseball fields, Skatepark, in downtown Manchester right next to the rec center.<br>
-</p>
-</td>
-<td>
-  <p>
-<b>Tubing the River</b><br>
-
-Put-in:<br>
-A three hour or so tube down the river.  Depending on rain it takes longer or shorter and you need to walk some parts if there isn't much flow.<br>
-<!--------------MAP----------------------->
-<a target="_blank" href="http://www.floattn.com/floatin_trips.pdf">Other Float Options on the 3 Forks</a>
-</p>
-</td>
-</tr>
-<tr>
-  <td>
-    <p>
-<b>Local Waterfalls</b>
-<br>
-Foster Falls<br>
-498 Foster Falls Rd, Sequatchie, TN 37374<br>
-40 minutes away, Excellent climbing, hiking and a great waterfall and pool with a climbing route under the falls!<br>
-Fall Creek Falls<br>
-2009 Village Camp Road
-Spencer, TN 38585<br>
-The tallest falls in Tennessee at 256 feet, about an hour away, there are multiple falls and pools.<br>
-<a target="_blank" href="http://www.scenicusa.net/092512.html">Greeter Falls</a><br>
-Greeter Trail Altamont, TN<br>
-<a target="_blank" href="http://www.rubyfalls.com/">Ruby Falls</a><br>
-</p>
-  </td>
-  <td rowspan="2">
-<p>
-<b>Hiking</b>
-<br>
-Foster Falls Fiery Gizzary trail 12.5mi<br>
-Follow the Fiery Gizzard trail from Foster Falls, 498 Foster Falls rd to 131 Fiery Gizzard Rd, Tracy City, TN 37387.<br>
-Walk above foster falls along an incredible ridgeline and across lots of bridges.
-<br>
-<a target="_blank" href="https://www.alltrails.com/trail/us/tennessee/buggytop-trail-to-lost-cove-cave">Buggy Top Trail to Lost Cove Cave 3.7mi</a><br>
-Trail takes you through 3.7 miles of great woods to a Cave and creek<br>
-A little tricky to follow the path at times, bring flashlights for the cave!<br>
-</p></td>
-<td>
-  <p>
-<b>In Nashville</b> <br>
-<a target="_blank" href="http://www.visitmusiccity.com/">City of Nashville</a><br>
-Edleys BBQ <br>
-Praters BBQ in Manchester<br>
-12th st, lots of small shops and food<br>
-Broadway, live music and drinks <br>
-Nashville Predators, best hockey in the south, on broadway downtown nashville. <br>
-Tennessee Titans <br>
-Nashville Zoo <br>
-Top Golf <br>
-  </p>
-</td>
-</tr>
-<tr>
-  <td>
-    <p>
-<b>Longboard Hills (Not reccomending you try to do this!)</b><br>
-Hwy 56 Beersheba springs TN<br>
-Clouse Hill rd. and Payne Cove rd. Pelham TN<br>
-</p>
-  </td>
-  <td>
-    <p>
-<b>In Chattanooga</b><br>
-<a target="_blank" href="http://www.chattanoogafun.com/">City of Chattanooga</a><br>
-<a target="_blank" href="http://www.tnaqua.org/Home.aspx">TN Aquarium</a><br>
-<br>
-</p>
-  </td>
-</tr>
-</table>
-  
 </div>
 
 </template>

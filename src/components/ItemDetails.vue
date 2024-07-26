@@ -29,7 +29,7 @@ defineProps({
 </script>
 
 <template>
-  <div style="border-radius: 3vh; padding: 3vh 3vh 3vh 0; margin: 0; background-color: #444; display: flex; flex-direction: row; justify-content: space-between;">
+  <div class="item-details">
       
     <img :src="imgSrc" :alt="imgAlt" style="border-radius: 1vh; width: auto; height: 50vh; margin: 3vh 0vh 3vh 3vh;" />
       <div style="width: 40vw;">
@@ -40,3 +40,19 @@ defineProps({
       <payPalForm style="align-self: center;" v-bind="payPalFormProps"/>
   </div>
 </template>
+
+<style scoped>
+.item-details {
+  border-radius: 3vh;
+  padding: 3vh 3vh 3vh 0;
+  margin: 0;
+  background-color: #444;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-aspect-ratio: 3/2) {
+  
+}
+</style>

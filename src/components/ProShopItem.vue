@@ -39,7 +39,7 @@ function itemSelected() {
 </script>
 
 <template>
-  <button id="button" class="vert-container button-hover" @click="itemSelected()" :style="{width: '20vw', borderWidth: '0', paddingTop: '2vh', backgroundColor: isSelected ? '#444' : 'rgb(20, 20, 20)'}">
+  <button id="button" class="vert-container button-hover" @click="itemSelected()" :style="{minWidth: '230px', width: '20vw', borderWidth: '0', paddingTop: '2vh', backgroundColor: isSelected ? '#444' : 'rgb(20, 20, 20)'}">
     <div style="height: 40vh;">
     <img :src="imgSrc" :alt="imgAlt" style="width: 200px; height: auto; margin-bottom: 3vh; border-radius: 1vh;" />
     </div>
