@@ -13,7 +13,7 @@ onMounted(() => {
 
 <template>
   <div class="vert-container" style="margin-top: 12.5vh;">
-    <img id="1" src="../assets/banner.webp" style="width: 100%; margin-top: 0; padding-top: 0;">
+    <img id="1" src="../assets/banner.webp" style="width: 100vw; max-width: 100vw; margin-top: 0; padding-top: 0;">
     <p style="text-align: center !important; margin-top: 4vh;">Call or email now to let our pros teach you how to ski or wakeboard!<br>
       We offer a variety of economical packages perfect for individuals and large groups.<br>
       Our proshop sells a variety of waterski equipment be sure to check it out!<br>

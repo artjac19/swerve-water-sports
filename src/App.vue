@@ -418,6 +418,10 @@ td, th {
   display: none;
 }
 
+img {
+  max-width: 90vw;
+}
+
 @media (max-aspect-ratio: 3/2) {
   .photos {
     flex-direction: column;
