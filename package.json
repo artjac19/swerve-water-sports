@@ -30,6 +30,6 @@
     "imagemin-svgo": "^11.0.1",
     "imagemin-webp": "^8.0.0",
     "prettier": "^3.2.5",
-    "vite": "^5.2.8"
+    "vite": "^5.3.5"
   }
 }

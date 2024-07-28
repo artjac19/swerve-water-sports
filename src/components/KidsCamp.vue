@@ -65,7 +65,7 @@ import PayPalForm from './PayPalForm.vue';
         { value: 'Lesson', label: 'Lesson $50.00 USD' },
         { value: 'Ten Pack', label: 'Ten Pack $400.00 USD' },
         { value: '1 Day Lessons', label: '1 Day Lessons $140.00 USD' },
-        { value: 'Collegiate Day Stay', label: 'Collegiate Day Stay $140.00 USD' },
+        { value: 'Collegiate Group Stay', label: 'Collegiate Group 1 Day Stay $140.00 USD' },
         { value: 'Event Practice 4 passes', label: 'Event Practice 4 passes $15.00 USD' },
         { value: 'Season Pass', label: 'Season Pass $2,450.00 USD' }
       ]" 
