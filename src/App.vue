@@ -70,22 +70,22 @@ const toggleVisibility = (makeVisible) => {
 </script>
 
 <template>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
-  <div style="border-bottom: .4vh solid rgb(72, 255, 0); background-color: black; align-items: center; margin: 0; padding: 0; position: fixed; top: 0; left: 0; width: 100vw; z-index: 2;">
-    <button class="logo" style="display: flex; flex-direction: column; margin-left: auto; margin-right: auto; margin-top: 2vh; margin-bottom: 2vh;" @click="toggleVisibility(true)"><img id="hamburger" src="./assets/menu-01.webp" object-fit="cover" flood="#ff0000" width="50vh" height="50vh"/></button>
-  </div>
-  <div id="tabs" class="menu-container">
-    <button class="logo" id="logo" @click="reload"><img src="./assets/swerve-01.webp" object-fit="cover" flood="#ff0000" width="70vh" height="70vh"/></button>
-    <button class="logo-gone" id="x-button" @click="toggleVisibility(false)"><img src="./assets/x-button-01.webp" object-fit="cover" flood="#ff0000" style="width: 5vh; height: 5vh; align-self: center; margin: 1vh 0 0 0; padding: 0;"/></button>
-    <button class="tab-item" @click="switchTabs('Home', 1)">Home</button>
-    <button class="tab-item" @click="switchTabs('Home', 2)">Schedule a Visit</button>
-    <button class="tab-item" @click="switchTabs('Home', 3)">Our Team</button>
-    <button class="tab-item" @click="switchTabs('Home', 4)">Lake and Area</button>
-    <button class="tab-item proshop" id="proshop" @click="switchTabs('Proshop', 1)">Pro Shop</button>
-    <button class="tab-item" @click="switchTabs('Kids', 1)">Kids Camp</button>
-    <button class="tab-item" @click="switchTabs('Disc', 1)">Disc Golf</button>
-  </div>
-  <button class="logo-gone" id="exit-tabs" @click="toggleVisibility(false)" style="margin: 0; padding: 0; width: 100%; position: fixed; height: 50vh; top: 57vh; left: 0; z-index: 2;"></button>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <div style="border-bottom: .4vh solid rgb(72, 255, 0); background-color: black; align-items: center; margin: 0; padding: 0; position: fixed; top: 0; left: 0; width: 100vw; z-index: 2;">
+      <button class="logo" style="display: flex; flex-direction: column; margin-left: auto; margin-right: auto; margin-top: 2vh; margin-bottom: 2vh;" @click="toggleVisibility(true)"><img id="hamburger" src="./assets/menu-01.webp" object-fit="cover" flood="#ff0000" width="50vh" height="50vh"/></button>
+    </div>
+    <div id="tabs" class="menu-container">
+      <button class="logo" id="logo" @click="reload"><img src="./assets/swerve-01.webp" object-fit="cover" flood="#ff0000" width="70vh" height="70vh"/></button>
+      <button class="logo-gone" id="x-button" @click="toggleVisibility(false)"><img src="./assets/x-button-01.webp" object-fit="cover" flood="#ff0000" style="width: 5vh; height: 5vh; align-self: center; margin: 1vh 0 0 0; padding: 0;"/></button>
+      <button class="tab-item" @click="switchTabs('Home', 1)">Home</button>
+      <button class="tab-item" @click="switchTabs('Home', 2)">Schedule a Visit</button>
+      <button class="tab-item" @click="switchTabs('Home', 3)">Our Team</button>
+      <button class="tab-item" @click="switchTabs('Home', 4)">Lake and Area</button>
+      <button class="tab-item proshop" id="proshop" @click="switchTabs('Proshop', 1)">Pro Shop</button>
+      <button class="tab-item" @click="switchTabs('Kids', 1)">Kids Camp</button>
+      <button class="tab-item" @click="switchTabs('Disc', 1)">Disc Golf</button>
+    </div>
+    <button class="logo-gone" id="exit-tabs" @click="toggleVisibility(false)" style="margin: 0; padding: 0; width: 100%; position: fixed; height: 50vh; top: 57vh; left: 0; z-index: 2;"></button>
   <HomePage v-if="checkTabs('Home')"/>
   <KidsCamp v-if="checkTabs('Kids')"/>
   <DiscGolf v-if="checkTabs('Disc')"/>

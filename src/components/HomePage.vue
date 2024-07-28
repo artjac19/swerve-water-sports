@@ -20,9 +20,9 @@ onMounted(() => {
       Hang out at the lake on a hot day!<br>
       Play a round of disc golf!<br><br></p>
     <div class="photos">
-      <img class="photo" src="../assets/david1ball.webp" style="width: 60vh; height: 45vh;">
-      <img class="photo" src="../assets/collegevolleyball.webp" style="width: 60vh; height: 45vh;">
-      <img class="photo" src="../assets/swerveshirts.webp" style="width: 60vh; height: 45vh;">
+      <img class="photo" src="../assets/david1ball.webp" style="width: 60vh; height: auto;">
+      <img class="photo" src="../assets/collegevolleyball.webp" style="width: 60vh; height: auto;">
+      <img class="photo" src="../assets/swerveshirts.webp" style="width: 60vh; height: auto;">
     </div>
     <div class="photos">
       <iframe class="youtube-1"
@@ -90,8 +90,8 @@ onMounted(() => {
       <li>2023 Nationals</li>
     </ul>
   </div>
-    <img class="photo" alt="Ashley slalom" width="450" height="300" src="../assets/ashley2.webp" />
-    <img class="photo" alt="Ashley trick" style="width: 400px; height: 400px;" src="../assets/ashley1.webp" />
+    <img class="photo" alt="Ashley slalom" style="width: 450px; height: auto;" src="../assets/ashley2.webp" />
+    <img class="photo" alt="Ashley trick" style="width: 400px; height: auto;" src="../assets/ashley1.webp" />
   </div>
   <div class="photos" style="align-items: center;">
     <div class="vert-container">
@@ -106,8 +106,8 @@ onMounted(() => {
       <li>2023 Mens 2 National Slalom Champion 2nd in Overall</li>
     </ul>
   </div>
-    <img class="photo" alt="Mike jump" style="width: 400px; height: 400px;" src="../assets/mike.webp" />
-    <img class="photo" alt="Mike slalom" width="450" height="300" src="../assets/mike1.webp" />
+    <img class="photo" alt="Mike jump" style="width: 400px; height: auto;" src="../assets/mike.webp" />
+    <img class="photo" alt="Mike slalom" style="width: 450px; height: auto;" src="../assets/mike1.webp" />
   </div>
   <div class="photos" style="align-items: center;">
     <div class="vert-container">
@@ -122,8 +122,8 @@ onMounted(() => {
       <li>2023 Collegiate Nationals</li>
     </ul>
   </div>
-  <img class="photo" alt="Finlay slalom" width="533.3" height="300" src="../assets/finlaySlalom.webp" />
-  <img class="photo" alt="Finlay jump" style="width: 400px; height: 400px;" src="../assets/finlayJump.webp" />
+  <img class="photo" alt="Finlay slalom" style="width: 533.3px; height: auto;" src="../assets/finlaySlalom.webp" />
+  <img class="photo" alt="Finlay jump" style="width: 400px; height: auto;" src="../assets/finlayJump.webp" />
   </div>
   <div class="photos" style="align-items: center;">
     <div class="vert-container">
@@ -139,8 +139,8 @@ onMounted(() => {
       <li>MCWSA Rookie of the Year</li>
     </ul>
   </div>
-  <img class="photo" alt="Jake slalom" width="480" height="270" src="../assets/jakeSlalom.webp" />
-  <img class="photo" alt="Barbell slalom" style="width: 400px; height: 400px;" src="../assets/barbellSlalom2.webp" />
+  <img class="photo" alt="Jake slalom" style="width: 480px; height: auto;" src="../assets/jakeSlalom.webp" />
+  <img class="photo" alt="Barbell slalom" style="width: 400px; height: auto;" src="../assets/barbellSlalom2.webp" />
   </div>
   <h2 id="4">Lake and Area</h2>
   <p>&#8195; &#8195;Swerve Watersports Center is on Lake Grace in Hillsboro Tennessee. It is a custom built water ski lake dug in 2004 by Nicky Lowe. Surrounded on one side by woods, grass trail and marsh, the other by some nice houses, the sight is beautiful. The lake was designed specifically for 3-event water skiing with a shallow depth, slopes to eliminate rollers, and the perfect shape. Located in Hillsboro TN, it is close to civilization but far out enough to feel like the country. Only 2 minutes from I-24 which runs directly between Nashville and Chattanooga, there is never a shortage of entertainment or sightseeing within an hour's drive. With restaurants and big name stores less than 5 minutes away, anything you might need is also close at hand.
@@ -164,13 +164,13 @@ onMounted(() => {
     </div>
     <div class="vert-container">
       <img class="photo" alt="Swerve Watersports Center Boat View" style="margin-top: 5vh" width="480" height="300" src="../assets/jacuzzi.webp" />
-      <img class="photo" alt="Swerve Watersports Center Hillsboro" width="480" height="300" src="../assets/sunset.webp" />
+      <img class="photo" alt="Swerve Watersports Center Hillsboro" style="width: 480px; height: auto;" src="../assets/sunset.webp" />
     </div>
   </div>
   <div class="photos">
-    <img class="photo" alt="SWC" width="420" height="280" src="../assets/lake.webp" />
-    <img class="photo" alt="Swerve" width="420" height="280" src="../assets/lake3.webp" />
-    <img class="photo" alt="Waterski Jucuzzi SWC" width="420" height="280" src="../assets/lake2.webp" />
+    <img class="photo" alt="SWC" style="width: 420px; height: auto;" src="../assets/lake.webp" />
+    <img class="photo" alt="Swerve" style="width: 420px; height: auto;" src="../assets/lake3.webp" />
+    <img class="photo" alt="Waterski Jucuzzi SWC" style="width: 420px; height: auto;" src="../assets/lake2.webp" />
   </div>
   
   <h2>Things to Do</h2>
