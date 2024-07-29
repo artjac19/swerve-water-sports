@@ -419,7 +419,7 @@ td, th {
 }
 
 img {
-  max-width: 90vw;
+  max-width: 80vw;
 }
 
 @media (max-aspect-ratio: 3/2) {
