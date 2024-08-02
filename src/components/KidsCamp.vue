@@ -6,7 +6,7 @@ import PayPalForm from './PayPalForm.vue';
 <template>
 <div class="vert-container">
 <h2 style="margin-top: calc(100px + 3vh); margin-bottom: 0vh;">Kids Camp </h2>
-<p style="margin-top: 2.5vh; margin-bottom: 7vh;">&#8195; &#8195;We strive to get kids interested in and enjoying watersports at all ages.  Our kids camp provides a great environment for kids to be themselves and enjoy boating and skiing with other kids their ages. We strive to provide a fun setting for learning and developing social skills while becoming well rounded humans on and off the lake! </p>
+<p style="margin-top: 2.5vh; margin-bottom: 7vh;">&#8195; &#8195;We strive to get kids interested in and enjoying watersports at all ages. Our kids camp provides a great environment for kids to be themselves and enjoy boating and skiing with other kids their ages. Our goal is to provide a fun setting for learning about the water, developing social skills, and becoming well rounded humans on and off the lake!</p>
 <div class="photos">
   <img class="photo" alt="Swerve Watersports Center Kids Camp" style="width: 420px; height: auto;" src="../assets/ashleywithkid.webp" /> <!--pic/index/26.webp  pic/index/24.webp pic/index/27.webp-->
   <img class="photo" alt="Swerve Watersports Center Hillsboro Tennessee Kids Camp" style="width: 420px; height: auto;" src="../assets/twokids.webp" />
@@ -21,7 +21,7 @@ import PayPalForm from './PayPalForm.vue';
 </div>
 <h2>Pricing and Logistics</h2>
 <p>
-    &#8195; &#8195;Kids should bring sunscreen, swimsuits, towel, snacks, hat, sunshirt, watershoes, waterbottle, and a change of clothes. The cost is $120/day for day campers and $160/day for overnighters. Kids can attend for the full week or just a couple days. Deposit for one day or $120 to reserve a spot, maximum of 10 students per week to ensure enough water time and focus for everyone.  Payments can be made here through the website or venmo or paypal whatever is easiest. Kids can attend over night and stay with our chaperones at the "clubhouse" or can be dropped off and picked up every day. Check in is at 9am and check out is 4pm. All kids must sign the <a href='https://form.jotform.com/220764194303048' target="_blank">Swerve Watersports Waiver</a>.
+    &#8195; &#8195;Kids should bring sunscreen, swimsuits, towel, snacks, hat, sunshirt, water shoes, water bottle, and a change of clothes. The cost is $120/day for day campers and $160/day for overnighters. Kids can attend for the full week or just a couple days. Deposit for one day or $120 to reserve a spot! There is a maximum of 10 students per week to ensure enough water time and focus for everyone. Payments can be made here through the website or venmo or paypal, whichever is easiest. Kids can attend overnight, staying with our chaperones at the "clubhouse," or can be dropped off and picked up each day. Check in is at 9am and check out is 4pm. All kids must sign the <a href='https://form.jotform.com/220764194303048' target="_blank">Swerve Watersports Waiver</a> prior to skiing!
 </p>
 <h2>Schedule</h2>
 <div style="align-items: center; align-content: center;">

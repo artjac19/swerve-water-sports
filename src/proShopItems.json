@@ -5,7 +5,7 @@
         "price": "$25",
         "imgSrc": "tyeDyeT.webp",
         "imgAlt": "Swerve T-Shirt",
-        "description": "Swerve Watersports Classic T shirt",
+        "description": "Swerve Watersports cotton T-shirt, comes in a variety of colors and designs",
         "payPalFormProps": {
           "class": "photo",
           "buttonId": "SR6JWSKSTPXPG",
@@ -32,7 +32,7 @@
         "price": "$32",
         "imgSrc": "dubery.webp",
         "imgAlt": "Polarized Sunglasses",
-        "description": "Dubery Sunglasses Polarized for UVA and UVB protection",
+        "description": "Dubery Sunglasses, polarized for UVA and UVB protection, lightweight and durable!",
         "payPalFormProps": {
           "class": "photo",
           "buttonId": "EGS8R3GTDD5QL",
@@ -40,23 +40,11 @@
         }
       },
       {
-        "title": "HO Freeride Slalom Ski",
-        "price": "$365",
-        "imgSrc": "freeride.webp",
-        "imgAlt": "HO Freeride",
-        "description": "New 67\" HO Freeride slalom blank w/ fin 175+ 2014",
-        "payPalFormProps": {
-          "class": "photo",
-          "buttonId": "AE57YP9P2RKVG",
-          "label": "HO Freeride Slalom Ski"
-        }
-      },
-      {
         "title": "Trick Rope",
         "price": "$55",
         "imgSrc": "trickrope.webp",
         "imgAlt": "Trick rope",
-        "description": "Trick rope with adjustable loops and float",
+        "description": "Trick rope with adjustable loops and float. Non-stretch",
         "payPalFormProps": {
           "class": "photo",
           "buttonId": "WAX9QKLYWT7MA",
@@ -68,7 +56,7 @@
         "price": "$85",
         "imgSrc": "barefootrope.webp",
         "imgAlt": "Barefoot Rope",
-        "description": "12 strand red kevlar barefoot rope Floats Non-strech 600lb test 75' 80' 85' 90'",
+        "description": "12 strand, red kevlar barefoot rope that floats. Non-strech: 600lb test 75' 80' 85' 90'",
         "payPalFormProps": {
           "class": "photo",
           "buttonId": "4UDD4YYR6WCLU",
@@ -92,7 +80,7 @@
         "price": "$35",
         "imgSrc": "sunhat.webp",
         "imgAlt": "Sun Hats",
-        "description": "Straw sunhat. The best hat for blocking sun while on the boat",
+        "description": "Straw sunhat with Swerve logo. The best hat for blocking sun while on the water",
         "payPalFormProps": {
           "class": "photo",
           "buttonId": "2DL2GPUPAJK6G",
@@ -129,7 +117,7 @@
         "price": "$385",
         "imgSrc": "watersJumpSuit.webp",
         "imgAlt": "Waters Wetsuits Jump Suit",
-        "description": "Jump Suit padded, flexible and looks great",
+        "description": "Jump Suit. Segmented padding allows for more flexibility and a great fit!",
         "payPalFormProps": {
           "type": "Blue Sizes",
           "options": [
@@ -149,7 +137,7 @@
         "price": "$129",
         "imgSrc": "dolphinVest.webp",
         "imgAlt": "Dolphin Wetsuits Ski Vest",
-        "description": "Ski Vest. Great padding and float for a competition vest lasts longer than the competition",
+        "description": " Ski Competition Vest. Great padding and excellent floatation for a lightweight comp vest that will last longer than the competition",
         "payPalFormProps": {
           "type": "Size and Color",
           "options": [
@@ -172,7 +160,7 @@
         "price": "$85",
         "imgSrc": "stealthBomberGlove.webp",
         "imgAlt": "Stealth Bomber Glove",
-        "description": "Great Tough Glove for slalom and Skiing",
+        "description": "A great, tough glove for slalom and skiing!",
         "payPalFormProps": {
           "type": "Size",
           "options": [
@@ -194,7 +182,7 @@
         "price": "$79",
         "imgSrc": "stealthMingoGlove.webp",
         "imgAlt": "Stealth Mingo Glove",
-        "description": "Looks great and grips better",
+        "description": "A comfortable glove that looks great and grips better!",
         "payPalFormProps": {
           "type": "Size",
           "options": [
@@ -216,7 +204,7 @@
         "price": "$69",
         "imgSrc": "stealthLiteGlove.webp",
         "imgAlt": "Stealth Lite Glove",
-        "description": "Simple classic reliable slalom glove",
+        "description": "A simple, classic, reliable slalom glove.",
         "payPalFormProps": {
           "type": "Size",
           "options": [
@@ -238,7 +226,7 @@
         "price": "$89",
         "imgSrc": "stealthKevlarGlove.webp",
         "imgAlt": "Stealth Kevlar Glove",
-        "description": "The best grip, vise grip on the handle with this durable glove",
+        "description": "This durable glove provides the best grip on the handle!",
         "payPalFormProps": {
           "type": "Size",
           "options": [
@@ -260,7 +248,7 @@
         "price": "$110",
         "imgSrc": "sLinesSlalom.webp",
         "imgAlt": "S Lines Slalom",
-        "description": "Salom ropes with the brightest colors and the closest measurements don’t get anything but the best",
+        "description": "Salom ropes with the brightest colors and the closest measurements, don’t get anything but the best! Various color and stiffness options available in shop.",
         "payPalFormProps": {
           "class": "photo",
           "buttonId": "D9ECCQNYLN5SC",
@@ -272,7 +260,7 @@
         "price": "$70",
         "imgSrc": "sLinesJumpRope.webp",
         "imgAlt": "S Lines Jump Rope",
-        "description": "Jump Rope",
+        "description": "A jump rope that will last!",
         "payPalFormProps": {
           "class": "photo",
           "buttonId": "6TTX7VUUJMPUG",
@@ -284,7 +272,7 @@
         "price": "$45",
         "imgSrc": "swerveBoardshorts.webp",
         "imgAlt": "Swerve Boardshorts",
-        "description": "Boardshorts vairety of styles and colors in stock",
+        "description": "Swerve boardshorts come in a vairety of styles and colors, sure to find a perfect match for you!",
         "payPalFormProps": {
           "type": "Size",
           "options": [
@@ -301,10 +289,10 @@
       },
       {
         "title": "Swerve Hat",
-        "price": "$25",
+        "price": "$35",
         "imgSrc": "swerveHat.webp",
         "imgAlt": "Swerve Hat",
-        "description": "Swerve Hat",
+        "description": "Swerve baseball hat, comes in white or dark gray & black.",
         "payPalFormProps": {
           "class": "photo",
           "buttonId": "4YUFN34LSVLAQ",
@@ -316,7 +304,7 @@
         "price": "$45",
         "imgSrc": "hoodie.webp",
         "imgAlt": "Swerve Watersports Hoodie",
-        "description": "Swerve Watersports Hoodie",
+        "description": "This soft Swerve hoodie, made of cotton and polyester, comes in dark blue or green.",
         "payPalFormProps": {
           "type": "Size",
           "options": [
@@ -336,7 +324,7 @@
         "price": "$135",
         "imgSrc": "handle.webp",
         "imgAlt": "S Lines Handles",
-        "description": "Slalom and Jump Handles with protective plastic",
+        "description": "Slalom and Jump Handles come in a variety of lengths and thicknesses to ensure a good fit for you! A protective plastic on the handles keeps them safe from wear. ",
         "payPalFormProps": {
           "type": "Size and Type",
           "options": [
@@ -356,7 +344,7 @@
         "price": "$350",
         "imgSrc": "barefootsuit.webp",
         "imgAlt": "Dolphin Barefoot Suit",
-        "description": "Barefoot Jump suit padded and floatation",
+        "description": "Barefoot Jump suit with padding and floatation",
         "payPalFormProps": {
           "class": "photo",
           "buttonId": "WWG4WXW2PADYE",
@@ -366,6 +354,18 @@
             { "value": "Small Grey", "label": "Small Grey $329.00 USD" },
             { "value": "Medium Yellow", "label": "Medium Yellow $329.00 USD" }
           ]
+        }
+      },
+      {
+        "title": "HO Freeride Slalom Ski",
+        "price": "$365",
+        "imgSrc": "freeride.webp",
+        "imgAlt": "HO Freeride",
+        "description": "New 67\" HO Freeride slalom blank with fin 175+ 2014",
+        "payPalFormProps": {
+          "class": "photo",
+          "buttonId": "AE57YP9P2RKVG",
+          "label": "HO Freeride Slalom Ski"
         }
       }
     ]

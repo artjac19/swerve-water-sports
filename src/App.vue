@@ -6,6 +6,7 @@ import KidsCamp from './components/KidsCamp.vue'
 import Contact from './components/ContactUs.vue'
 import DiscGolf from './components/DiscGolf.vue'
 import ProShop from './components/ProShop.vue'
+import ExampleTab from './components/ExampleTab.vue';
 
 
 let tab = ref('Home')
@@ -81,15 +82,21 @@ const toggleVisibility = (makeVisible) => {
       <button class="tab-item" @click="switchTabs('Home', 2)">Schedule a Visit</button>
       <button class="tab-item" @click="switchTabs('Home', 3)">Our Team</button>
       <button class="tab-item" @click="switchTabs('Home', 4)">Lake and Area</button>
+      <!--<button class="tab-item" @click="switchTabs('Home', 5)">Example Header</button> the number next to 'Home' is the id of the 
+        element you want the page to scroll to when you click on the tab item. so for this i'm going to put id="5" at the bottom of
+        HomePage next to the header element
+      -->
       <button class="tab-item proshop" id="proshop" @click="switchTabs('Proshop', 1)">Pro Shop</button>
       <button class="tab-item" @click="switchTabs('Kids', 1)">Kids Camp</button>
       <button class="tab-item" @click="switchTabs('Disc', 1)">Disc Golf</button>
+      <!--<button class="tab-item" @click="switchTabs('Example', 1)">Example Tab</button> make sure to add your tab as such -->
     </div>
     <button class="logo-gone" id="exit-tabs" @click="toggleVisibility(false)" style="margin: 0; padding: 0; width: 100%; position: fixed; height: 50vh; top: 57vh; left: 0; z-index: 2;"></button>
   <HomePage v-if="checkTabs('Home')"/>
   <KidsCamp v-if="checkTabs('Kids')"/>
   <DiscGolf v-if="checkTabs('Disc')"/>
   <ProShop v-if="checkTabs('Proshop')"/>
+  <ExampleTab v-if="checkTabs('Example')"/>
   <Contact/>
 </template>
 
@@ -256,24 +263,6 @@ a:visited {
   margin-bottom: 5vh;
 }
 
-.text {
-  font-family: 'Montserrat', serif;
-  font-size: 1.2em;
-  border: none;
-  color: white;
-  background-color: transparent;
-  position: relative;
-  text-align: left;
-  font-weight: 0;
-  box-sizing: border-box;
-  max-width: 125vh;
-  overflow-wrap: break-word;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  line-height: 2;
-  flex: 1;
-}
-
 .youtube-1 {
   margin-right: 2vw;
   border-radius: 1vh;
@@ -286,11 +275,6 @@ a:visited {
   width: 35vw;
   height: 19vw;
   margin-right: 2vw;
-}
-
-.title {
-  font-family: 'Merriweather', sans-serif;
-  color: white;
 }
 
 ul {
@@ -403,11 +387,6 @@ td, th {
 
 .item:hover {
   color: rgb(72, 255, 0);
-}
-
-.invisible-table {
-  background-color: transparent;
-  border-width: 0;
 }
 
 .mobile-table {
