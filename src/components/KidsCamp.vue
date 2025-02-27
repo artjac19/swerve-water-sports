@@ -26,19 +26,20 @@ We aim to create a positive, welcoming space where kids can learn new skills, de
           <br>June 23rd–27th
           <br>July 14th–18th
           <br>July 21st–25th</b>
-          <br><br>We welcome kids ages 8-16 (ages are flexible depending on the child’s ability) and offer instruction for all skill levels. Whether your child is a beginner who’s never been on the water or an advanced athlete ready to master new tricks, our experienced coaches are here to help them grow.
-
       </p>
-<h2>What Your Child Will Learn:</h2>
+    </div>
+      <img class="photo" alt="SWC Kids Camp" src="../assets/kidtwoski.webp" style="width: 420px; height: auto; margin-top: 10vh; margin-left: 0vh; margin-right: 4vw;" img/>
+    
+    </div>
+    <p><br><br>We welcome kids ages 8-16 (ages are flexible depending on the child’s ability) and offer instruction for all skill levels. Whether your child is a beginner who’s never been on the water or an advanced athlete ready to master new tricks, our experienced coaches are here to help them grow.</p>
+      <h2>What Your Child Will Learn:</h2>
+
 <p>
   <br><b>Waterskiing & Wakeboarding:</b> Beginners will learn to get up on two skis, one ski, or a wakeboard. Advanced athletes can refine their techniques or take on new challenges to be able to run more passes or add new tricks. 
 
   <br><b>Safety & Boat Knowledge:</b> We teach essential water safety and boat etiquette to ensure campers understand how to be safe and responsible on and around the water.
 
   <br><b>Social Skills & Confidence:</b> Watersports provides a fantastic opportunity for kids to work together, communicate, and build confidence both in the water and in life. It’s more than just a camp; it’s a chance for personal growth and development</p>
-    </div>
-    <img class="photo" alt="SWC Kids Camp" src="../assets/kidtwoski.webp" style="width: 420px; height: auto; margin-top: 10vh; margin-left: 0vh; margin-right: 4vw;" img/>
-</div>
 <h2>Pricing and Logistics</h2>
 <p>
     We want to make your child’s experience at camp as easy and enjoyable as possible. Here’s a breakdown of pricing and what to bring:
