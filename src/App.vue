@@ -1,6 +1,5 @@
 <script setup>
-import { ref } from 'vue'
-import { nextTick } from 'vue';
+import { ref, onMounted, nextTick } from 'vue'
 import HomePage from './components/HomePage.vue'
 import KidsCamp from './components/KidsCamp.vue'
 import Contact from './components/ContactUs.vue'
@@ -12,6 +11,31 @@ import ExampleTab from './components/ExampleTab.vue';
 let tab = ref('Home')
 let number = ref(1)
 let isVisible = true;
+
+const urlTab = ref('');
+const urlNum = ref(0);
+
+
+/*
+customizable url here
+"page" refers to Home page vs Kids camp vs Disc Golf vs Proshop
+"num" refers to where to scroll to on the home page (our team, lake and area, etc..), can be set to 1-4 in order.
+    Should be set to 1 for all other pages
+your url should look like: swervewaterspors.com/?page=yourPage&num=yourNum
+*/
+onMounted(() => {
+  const urlParams = new URLSearchParams(window.location.search);
+  urlTab.value = urlParams.get('page');
+  urlNum.value = urlParams.get('num')
+
+  if (urlTab.value === 'Home' && ['1', '2', '3', '4'].includes(urlNum.value)) {
+    setTimeout(() => {
+      switchTabs(urlTab.value, Number(urlNum.value), true);
+    }, 200);
+  } else if (['Kids', 'Disc', 'Proshop'].includes(urlTab.value) && urlNum.value === '1') {
+    switchTabs(urlTab.value, Number(urlNum.value));
+  }
+});
 
 const reload = () => {
   window.location.reload()
