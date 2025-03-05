@@ -18,7 +18,7 @@ const urlNum = ref(0);
 
 /*
 customizable url here
-"page" refers to Home page vs Kids camp vs Disc Golf vs Proshop
+"page" refers to Home page vs Kids camp vs Disc Golf vs Proshop, use "Home" "Kids" "Disc" or "Proshop"
 "num" refers to where to scroll to on the home page (our team, lake and area, etc..), can be set to 1-4 in order.
     Should be set to 1 for all other pages
 your url should look like: swervewaterspors.com/?page=yourPage&num=yourNum
