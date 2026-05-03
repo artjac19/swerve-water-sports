@@ -14,7 +14,7 @@ onMounted(() => {
 <template>
   <div class="vert-container" style="margin-top: 12.5vh;">
     <img id="1" src="../assets/banner.webp" style="width: 100vw; max-width: 100%; margin: 0 0 auto 0; padding-top: 0 0 auto 0;">
-    <p style="text-align: center !important; margin-top: 4vh;">Call or email now to let our pros teach you how to ski or wakeboard!<br>
+    <p style="text-align: center !important; margin-top: 4vh;">Call at (303) 817 - 0806 or email mike@swerveboards.com now to let our pros teach you how to ski or wakeboard!<br>
       We offer a variety of economical packages perfect for individuals or large groups.<br>
       Our Proshop sells a variety of waterski equipment. Be sure to check it out!<br>
       Come hang out at the lake on a hot day or play a round of disc golf!
@@ -34,23 +34,33 @@ onMounted(() => {
     <h2 style="margin-top: 10vh; margin-bottom: 2vh;" id="2">Schedule a Visit</h2>
     <p style="text-align: center;">
       You can schedule a visit by text, phone, email, or right here online.<br>
-      Contact info can be found at the bottom of the page, and the scheduling tool is below.<br>
+      Contact info can be found at the bottom of the page.<br>
       You can see more information below on some of our packages, events, and calendar.<br>
-      Payments can be made through the paypal option below, or can be made in person with cash, check, or venmo.<br>
-      If it's your first time out this season, make sure to sign the <a href='https://form.jotform.com/220764194303048' target="_blank">Swerve Watersports Waiver</a>.
+      Payments can be made through PayPal, or in person with cash, check, or venmo.<br>
+      If it's your first time out this season, make sure to sign the waiver.
     </p>
-    <PayPalForm style="margin-bottom: 4vh; align-self: center;"
-      class="photo"
+
+  <div class="action-buttons">
+    <a class="airbnb-button" href="https://form.jotform.com/220764194303048" target="_blank">
+      <span class="airbnb-button-label">First-time skier?</span>
+      <span class="airbnb-button-title">Sign Waiver</span>
+    </a>
+    <a class="airbnb-button" href="https://app.acuityscheduling.com/schedule.php?owner=11402006" target="_blank">
+      <span class="airbnb-button-label">Reserve a time</span>
+      <span class="airbnb-button-title">Schedule Appointment</span>
+    </a>
+    <PayPalForm
+      class="action-paypal"
       :options="[
         { value: 'Lesson', label: 'Lesson $50.00 USD' },
         { value: 'Ten Pack', label: 'Ten Pack $400.00 USD' },
         { value: '1 Day Lessons', label: '1 Day Lessons $140.00 USD' },
         { value: 'Collegiate Day Stay', label: 'Collegiate Day Stay $140.00 USD' },
-        { value: 'Event Practice 4 passes', label: 'Event Practice 4 passes $15.00 USD' },
         { value: 'Season Pass', label: 'Season Pass $2,450.00 USD' }
-      ]" 
+      ]"
     />
-  <a href="https://app.acuityscheduling.com/schedule.php?owner=11402006" target="_blank" class="acuity-embed-button" style="margin: 0 0 3vh 2vw; font-family: 'Montserrat', serif; color: #fff; padding: 8px 12px; border: 0px; border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Appointment</a><link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/11402006.css" id="acuity-button-styles" />
+  </div>
+
   <table>
    <tr><th><p>Type</p></th><th><p>Price</p></th><th><p>Description</p></th></tr>
    <tr><td><p>Ski Lesson</p></td><td><p>$50</p></td><td><p>Learn how to get up or master a new trick with our expert coaches in a one-on-one, 30 minute session. You’re guaranteed to walk away with some additional knowledge!</p></td></tr>
@@ -59,7 +69,6 @@ onMounted(() => {
    <tr><td><p>Reserve the Lake for an hour</p></td><td><p>$140/hr</p></td><td><p>Reserve an hour slot with a driver and coach! In general you can get 4 long sets in during the hour, more people equals shorter sets.</p></td></tr>
    <tr><td><p>Reserve the Lake for a Day</p></td><td><p>$720</p></td><td><p>Reserve the lake from 10:00am - 4:00pm, with driver and coach provided. Lunch can also be provided for $10 per meal.</p></td></tr>
    <tr><td><p>Collegiate Pass</p></td><td><p>$140/day</p></td><td><p>Includes three (3) coached sets for the day. Lodging and food are provided, and discounts can be made for large groups and teams!</p></td></tr>
-   <tr><td><p>Event Practice</p></td><td><p>$15</p></td><td><p>Practice is discounted Fridays before tournaments for all participants!</p></td></tr>
    <tr><td><p>Season Pass</p></td><td><p>$2,450</p></td><td><p>Unlimited skiing for one person per season. Free skiing for an entire season!</p></td></tr>
   </table>
   <table class="mobile-table">
@@ -69,13 +78,35 @@ onMounted(() => {
    <tr><td><p><b>Reserve the Lake for an hour: </b>$140/hr<br>Reserve an hour slot with a driver and coach! In general you can get 4 long sets in during the hour, more people equals shorter sets.</p></td></tr>
    <tr><td><p><b>Reserve the Lake for a Day: </b>$720<br>Reserve the lake from 10:00am - 4:00pm, with driver and coach provided. Lunch can also be provided for $10 per meal.</p></td></tr>
    <tr><td><p><b>Collegiate Pass: </b>$140/day<br>Includes three (3) coached sets for the day. Lodging and food are provided, and discounts can be made for large groups and teams!</p></td></tr>
-   <tr><td><p><b>Event Practice: </b>$15<br>Practice is discounted Fridays before tournaments for all participants!</p></td></tr>
    <tr><td><p><b>Season Pass: </b>$2,450<br>Unlimited skiing for one person per season. Free skiing for an entire season!</p></td></tr>
   </table>
+  
+  <h2 style="margin-top: 6vh;">Lodging</h2>
+  <p style="text-align: center;">
+    Stay right at the lake! We offer two Airbnb rentals on the property so you can wake up, walk down to the water, and ski all day.
+    Reserve your stay through Airbnb using one of the options below.
+  </p>
+  <div class="lodging-cards">
+    <div class="lodging-card">
+      <a class="airbnb-button" href="https://airbnb.com/h/swerveclubhouse" target="_blank">
+        <span class="airbnb-button-label">Book on Airbnb</span>
+        <span class="airbnb-button-title">The Clubhouse</span>
+      </a>
+      <img src="../assets/clubhouse.avif" alt="The Clubhouse" class="lodging-img">
+    </div>
+    <div class="lodging-card">
+      <a class="airbnb-button" href="https://airbnb.com/h/swervecamper" target="_blank">
+        <span class="airbnb-button-label">Book on Airbnb</span>
+        <span class="airbnb-button-title">The Camper</span>
+      </a>
+      <img src="../assets/camper.avif" alt="The Camper" class="lodging-img">
+    </div>
+  </div>
 
   <h2>Large Groups</h2>
-  <p style="text-align: center;">Do you have a large group and want to reserve the lake for a certain number of rides or hours? We can make that happen! From birthday parties to corporate events we can show your group a good time, build comradery, and teach a fun sport! We have food and lodging available if needed and can provide fun activities off the water as well. Call with any questions and we can tell you more about our packages. Reserving the lake for an hour is $140 and includes a 2 person crew to help with all your needs. With this option you can try and fit as many people into the hour as possible, or take just a few long sets. We recommend no more than 5 skiers try to ski in an hour. Discounts are offered for large groups of skiers, so be sure to reach out for information specific to your group!  </p>
+  <p style="text-align: center;">We can accommodate your large group for a day of skiing hanging out around the lake for either a couple hours or all day. From birthday parties to corporate events we can show your group a good time, build comradery, and teach a fun sport! We have food and lodging available if needed and can provide fun activities off the water as well. Call with any questions and we can tell you more about our packages. Reserving the lake for an hour is $140 and includes a 2 person crew to help with all your needs. With this option you can try and fit as many people into the hour as possible, or take just a few long sets. We recommend no more than 5 skiers try to ski in an hour. Discounts are offered for large groups of skiers, so be sure to reach out for information specific to your group!  </p>
   <iframe src="https://calendar.google.com/calendar/embed?src=slalombum%40gmail.com&ctz=America%2FChicago" style="border: 0; margin-top: 3vh; margin-bottom: 5vh; width: 80vw; height: 80vh;" align-self="center" frameborder="0" scrolling="no"></iframe>
+ 
   <h2 id="3">Our Team</h2>
   <p>&#8195; &#8195;Our riders are multi sport athletes that express themselves on boards that cater to their styles and preferences. Our staff of professional water ski and wake board coaches can teach a first time skier or an advanced athlete the newest techniques to gain another trick, buoy, or foot.</p>
   <div class="photos" style="align-items: center;">
@@ -112,35 +143,35 @@ onMounted(() => {
   <div class="photos" style="align-items: center;">
     <div class="vert-container">
     <p style="font-size: 1.5em; margin-bottom: 0;">
-      Finlay Donovan
+      Skye Elzaurdia
     </p>
     <ul>
-      <li>Age: 20</li>
-      <li>Hometown: Dallas, TX</li>
-      <li>College: Purdue</li>
-      <li>Purdue Waterski A-team</li>
-      <li>2023 Collegiate Nationals</li>
+      <li>Age: 21</li>
+      <li>Hometown: Evanston, IL</li>
+      <li>College: UW-Madison</li>
+      <li>3rd place in 2025 Regional Women's Jump</li>
+      <li>3rd Place Great Plains Women's Overall 2025</li>
+      <li>UW-Madison Team Captain</li>
     </ul>
   </div>
-  <img class="photo" alt="Finlay slalom" style="width: 533.3px; height: auto;" src="../assets/finlaySlalom.webp" />
-  <img class="photo" alt="Finlay jump" style="width: 400px; height: auto;" src="../assets/finlayJump.webp" />
+  <img class="photo" alt="Skye jump" style="width: 533.3px; height: auto;" src="../assets/skyejump.webp" />
+  <img class="photo" alt="Skye slalom" style="width: 400px; height: auto;" src="../assets/skyeslalom.webp" />
   </div>
   <div class="photos" style="align-items: center;">
     <div class="vert-container">
     <p style="font-size: 1.5em; margin-bottom: 0;">
-      Jake Artang
+      Sara Deerwester
     </p>
     <ul>
-      <li>Age: 19</li>
-      <li>Hometown: Prior Lake, MN</li>
-      <li>College: UW-Madison</li>
-      <li>2023 Shredfest Slalom Champion</li>
-      <li>Top 10 Men's Slalom 2023 Midwest Collegiate Season</li>
-      <li>MCWSA Rookie of the Year</li>
+      <li>Age: 21</li>
+      <li>Hometown: Springfield, OH</li>
+      <li>College: Ohio State</li>
+      <li>Ohio State Waterski Team Women’s Captain</li>
+      <li>Top 10 Women’s Overall 2025 D2 Collegiate Nationals</li>
     </ul>
   </div>
-  <img class="photo" alt="Jake slalom" style="width: 480px; height: auto;" src="../assets/jakeSlalom.webp" />
-  <img class="photo" alt="Barbell slalom" style="width: 400px; height: auto;" src="../assets/barbellSlalom2.webp" />
+  <img class="photo" alt="Sara ski" style="width: 400px; height: auto;" src="../assets/saraski.webp" />
+  <img class="photo" alt="Sara slalom" style="width: 480px; height: auto;" src="../assets/saraslalom.webp" />
   </div>
   <h2 id="4">Lake and Area</h2>
   <p>&#8195; &#8195;Swerve Watersports Center is on Lake Grace in Hillsboro, Tennessee. Surrounded on one side by woods, grass trails 
@@ -267,13 +298,6 @@ onMounted(() => {
       Put-in:<br>
       A three hour or so tube down the river.  Depending on rain it takes longer or shorter and you need to walk some parts if there isn't much flow.<br>
       <a target="_blank" href="http://www.floattn.com/floatin_trips.pdf">Other Float Options on the 3 Forks</a>
-    </p>
-  </div>
-  <div class="info-item">
-    <p>
-      <b>Longboard Hills (Not recommending you try to do this!)</b><br>
-      Hwy 56 Beersheba springs TN<br>
-      Clouse Hill rd. and Payne Cove rd. Pelham TN<br>
     </p>
   </div>
   <div class="info-item">

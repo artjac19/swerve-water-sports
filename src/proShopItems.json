@@ -64,18 +64,6 @@
         }
       },
       {
-        "title": "Kevlar Glove Liners",
-        "price": "$18",
-        "imgSrc": "liner.webp",
-        "imgAlt": "Kevlar Glove Liners",
-        "description": "Kevlar liners to prevent blisters. Wear these magic gloves inside your gloves to prevent blisters and sore hands from skiing",
-        "payPalFormProps": {
-          "class": "photo",
-          "buttonId": "9H37A53V38JRS",
-          "label": "Kevlar Glove Liners"
-        }
-      },
-      {
         "title": "Sun Hat",
         "price": "$35",
         "imgSrc": "sunhat.webp",

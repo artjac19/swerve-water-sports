@@ -27,7 +27,7 @@
 </div>
 
 
-    <p style="align-self: center; text-align: center; min-width: 50vh; margin-top: 0;">608 Love Lane Road, Hillsboro, TN 36342
+    <p style="align-self: center; text-align: center; min-width: 50vh; margin-top: 0;">608 Love Lane Road, Hillsboro, TN 37342
       <br>
       mike@swerveboards.com
       <br>

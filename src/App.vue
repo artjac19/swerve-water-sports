@@ -405,8 +405,116 @@ td, th {
 }
 
 .button-hover {
-  cursor: pointer; 
+  cursor: pointer;
   border-radius: 10px;
+}
+
+.lodging-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 2vh auto 4vh;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 1vh 0 5vh;
+  box-sizing: border-box;
+}
+
+.action-buttons > * {
+  flex: 1 1 280px;
+  max-width: 360px;
+  display: flex;
+}
+
+.action-buttons .action-paypal,
+.action-buttons .action-paypal > div,
+.action-buttons .action-paypal form {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.action-buttons .action-paypal form {
+  padding: 18px 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.action-buttons .action-paypal form p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.action-buttons .action-paypal .submit-button {
+  font-weight: 700;
+  padding: 10px 14px;
+}
+
+.lodging-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 14px;
+  flex: 1 1 360px;
+  max-width: 460px;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.lodging-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.airbnb-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 18px 24px;
+  background-color: rgb(72, 255, 0);
+  color: #000;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.airbnb-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  background-color: rgb(90, 255, 30);
+}
+
+.airbnb-button-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.75;
+}
+
+.airbnb-button-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 4px;
 }
 
 .item:hover {

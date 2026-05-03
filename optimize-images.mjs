@@ -21,7 +21,7 @@ const rotateImages = async (inputDir, tempDir) => {
     const inputFile = path.join(inputDir, file);
     const outputFile = path.join(tempDir, file);
 
-    if (ext === '.jpg' || ext === '.jpeg' || ext === '.png') {
+    if (ext === '.jpg' || ext === '.jpeg' || ext === '.png' || ext === '.avif') {
       const image = sharp(inputFile);
       const metadata = await image.metadata();
 
@@ -37,7 +37,7 @@ const rotateImages = async (inputDir, tempDir) => {
 };
 
 const optimizeImages = async (tempDir, outputDir) => {
-  const files = await imagemin([`${tempDir}/*.{jpg,png,svg}`], {
+  const files = await imagemin([`${tempDir}/*.{jpg,png,svg,avif}`], {
     destination: outputDir,
     plugins: [
       imageminMozjpeg({ quality: 75 }),

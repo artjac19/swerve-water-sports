@@ -18,14 +18,11 @@ We aim to create a positive, welcoming space where kids can learn new skills, de
 </div>  
   <div class="photos">
     <div style="display: flex; flex-direction: column;">
-      <h2>2025 Camp Dates</h2>
-      <p class="dates" style="margin-right: 3vw; margin-left: 3vw;"><b>Join us for an unforgettable summer!</b> Our Kids Camps will be held on the following dates in 2025:
-        <br><br><b>May 26th–30th
-          <br>June 2nd–6th
-          <br>June 9th–13th
-          <br>June 23rd–27th
-          <br>July 14th–18th
-          <br>July 21st–25th</b>
+      <h2>2026 Camp Dates</h2>
+      <p class="dates" style="margin-right: 3vw; margin-left: 3vw;"><b>Join us for an unforgettable summer!</b> Our Kids Camps will be held on the following dates in 2026:
+        <br><br><b>June 1–5th
+          <br>July 6–10th
+          <br>July 20–24th</b>
       </p>
     </div>
       <img class="photo" alt="SWC Kids Camp" src="../assets/kidtwoski.webp" style="width: 420px; height: auto; margin-top: 10vh; margin-left: 0vh; margin-right: 4vw;" img/>
